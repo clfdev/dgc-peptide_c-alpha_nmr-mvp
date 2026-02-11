@@ -1,0 +1,20 @@
+{
+  "model_type": "RidgeCV(full-fit)",
+  "n_features": 5,
+  "feature_names": [
+    "dist_to_center",
+    "dist_to_nearest_neighbor",
+    "local_density",
+    "dist_to_n_term",
+    "dist_to_c_term"
+  ],
+  "n_train_samples": 95,
+  "n_structures": 4,
+  "mae_cv": 2.3948002483805455,
+  "rmse_cv": 3.326370454150806,
+  "r2_cv": 0.04967534801743767,
+  "lambda_fullfit": 1.0,
+  "trained_date": "2026-02-10",
+  "version": "1.0-mvp-phase0",
+  "input_csv": "data/processed/pilot_dataset_features.csv"
+}

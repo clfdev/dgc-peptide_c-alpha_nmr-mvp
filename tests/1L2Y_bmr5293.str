@@ -1,0 +1,1934 @@
+data_5293
+
+#######################
+#  Entry information  #
+#######################
+
+save_entry_information
+   _Entry.Sf_category                    entry_information
+   _Entry.Sf_framecode                   entry_information
+   _Entry.ID                             5293
+   _Entry.Title                         
+;
+NMR Identification and Characterization of the Flexible Regions in the 160 KD 
+Molten Globule-like Aggregate of Barstar at Low pH 
+;
+   _Entry.Type                           macromolecule
+   _Entry.Version_type                   original
+   _Entry.Submission_date                2002-02-18
+   _Entry.Accession_date                 2002-02-18
+   _Entry.Last_release_date              2002-10-31
+   _Entry.Original_release_date          2002-10-31
+   _Entry.Origination                    author
+   _Entry.NMR_STAR_version               3.1.1.61
+   _Entry.Original_NMR_STAR_version      2.1
+   _Entry.Experimental_method            NMR
+   _Entry.Experimental_method_subtype    .
+   _Entry.Details                        .
+   _Entry.BMRB_internal_directory_name   .
+
+   loop_
+      _Entry_author.Ordinal
+      _Entry_author.Given_name
+      _Entry_author.Family_name
+      _Entry_author.First_initial
+      _Entry_author.Middle_initials
+      _Entry_author.Family_title
+      _Entry_author.Entry_ID
+
+      1 Juhi        Juneja    . . . 5293 
+      2 Neel        Bhavesh   . S . 5293 
+      3 Jayant      Udgaonkar . B . 5293 
+      4 Ramakrishna Hosur     . V . 5293 
+
+   stop_
+
+   loop_
+      _Data_set.Type
+      _Data_set.Count
+      _Data_set.Entry_ID
+
+      assigned_chemical_shifts 1 5293 
+      coupling_constants       1 5293 
+
+   stop_
+
+   loop_
+      _Datum.Type
+      _Datum.Count
+      _Datum.Entry_ID
+
+      '1H chemical shifts'  131 5293 
+      '13C chemical shifts'  47 5293 
+      '15N chemical shifts'  21 5293 
+      'coupling constants'   17 5293 
+
+   stop_
+
+   loop_
+      _Release.Release_number
+      _Release.Format_type
+      _Release.Format_version
+      _Release.Date
+      _Release.Submission_date
+      _Release.Type
+      _Release.Author
+      _Release.Detail
+      _Release.Entry_ID
+
+      1 . . 2002-10-31 2002-02-18 original author . 5293 
+
+   stop_
+
+save_
+
+
+###############
+#  Citations  #
+###############
+
+save_entry_citation
+   _Citation.Sf_category                  citations
+   _Citation.Sf_framecode                 entry_citation
+   _Citation.Entry_ID                     5293
+   _Citation.ID                           1
+   _Citation.Class                       'entry citation'
+   _Citation.CAS_abstract_code            .
+   _Citation.MEDLINE_UI_code              22142190
+   _Citation.DOI                          .
+   _Citation.PubMed_ID                    12146954
+   _Citation.Full_citation                .
+   _Citation.Title                       
+;
+NMR Identification and Characterization of the Flexible Regions in the 160 kDa 
+Molten Globule-like Aggregate of Barstar at low pH
+;
+   _Citation.Status                       published
+   _Citation.Type                         journal
+   _Citation.Journal_abbrev               Biochemistry
+   _Citation.Journal_name_full            .
+   _Citation.Journal_volume               41
+   _Citation.Journal_issue                31
+   _Citation.Journal_ASTM                 .
+   _Citation.Journal_ISSN                 .
+   _Citation.Journal_CSD                  .
+   _Citation.Book_title                   .
+   _Citation.Book_chapter_title           .
+   _Citation.Book_volume                  .
+   _Citation.Book_series                  .
+   _Citation.Book_publisher               .
+   _Citation.Book_publisher_city          .
+   _Citation.Book_ISBN                    .
+   _Citation.Conference_title             .
+   _Citation.Conference_site              .
+   _Citation.Conference_state_province    .
+   _Citation.Conference_country           .
+   _Citation.Conference_start_date        .
+   _Citation.Conference_end_date          .
+   _Citation.Conference_abstract_number   .
+   _Citation.Thesis_institution           .
+   _Citation.Thesis_institution_city      .
+   _Citation.Thesis_institution_country   .
+   _Citation.WWW_URL                      .
+   _Citation.Page_first                   9885
+   _Citation.Page_last                    9899
+   _Citation.Year                         2002
+   _Citation.Details                      .
+
+   loop_
+      _Citation_author.Ordinal
+      _Citation_author.Given_name
+      _Citation_author.Family_name
+      _Citation_author.First_initial
+      _Citation_author.Middle_initials
+      _Citation_author.Family_title
+      _Citation_author.Entry_ID
+      _Citation_author.Citation_ID
+
+      1 Juhi        Juneja    . .  . 5293 1 
+      2 Neel        Bhavesh   . S. . 5293 1 
+      3 Jayant      Udgaonkar . B. . 5293 1 
+      4 Ramakrishna Hosur     . V. . 5293 1 
+
+   stop_
+
+   loop_
+      _Citation_keyword.Keyword
+      _Citation_keyword.Entry_ID
+      _Citation_keyword.Citation_ID
+
+       Barstar           5293 1 
+      'low pH'           5293 1 
+      '160 kD aggregate' 5293 1 
+       HNN               5293 1 
+       HN(C)N            5293 1 
+
+   stop_
+
+save_
+
+
+#############################################
+#  Molecular system (assembly) description  #
+#############################################
+
+save_system_Barstar
+   _Assembly.Sf_category                       assembly
+   _Assembly.Sf_framecode                      system_Barstar
+   _Assembly.Entry_ID                          5293
+   _Assembly.ID                                1
+   _Assembly.Name                             'Barstar pH 2.7 160 kD aggregate'
+   _Assembly.BMRB_code                         .
+   _Assembly.Number_of_components              .
+   _Assembly.Organic_ligands                   .
+   _Assembly.Metal_ions                        .
+   _Assembly.Non_standard_bonds                .
+   _Assembly.Ambiguous_conformational_states   .
+   _Assembly.Ambiguous_chem_comp_sites         .
+   _Assembly.Molecules_in_chemical_exchange    .
+   _Assembly.Paramagnetic                      no
+   _Assembly.Thiol_state                      'all free'
+   _Assembly.Molecular_mass                    .
+   _Assembly.Enzyme_commission_number          .
+   _Assembly.Details                          
+;
+1BTA is structure of its native monomeric state. 
+Present system is pH 2.7 160 kD aggregate.
+;
+   _Assembly.DB_query_date                     .
+   _Assembly.DB_query_revised_last_date        .
+
+   loop_
+      _Assembly_type.Type
+      _Assembly_type.Entry_ID
+      _Assembly_type.Assembly_ID
+
+      hexadecamer 5293 1 
+
+   stop_
+
+   loop_
+      _Entity_assembly.ID
+      _Entity_assembly.Entity_assembly_name
+      _Entity_assembly.Entity_ID
+      _Entity_assembly.Entity_label
+      _Entity_assembly.Asym_ID
+      _Entity_assembly.PDB_chain_ID
+      _Entity_assembly.Experimental_data_reported
+      _Entity_assembly.Physical_state
+      _Entity_assembly.Conformational_isomer
+      _Entity_assembly.Chemical_exchange_state
+      _Entity_assembly.Magnetic_equivalence_group_code
+      _Entity_assembly.Role
+      _Entity_assembly.Details
+      _Entity_assembly.Entry_ID
+      _Entity_assembly.Assembly_ID
+
+       1 'barstar aggegate 1'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+       2 'barstar aggegate 2'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+       3 'barstar aggegate 3'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+       4 'barstar aggegate 4'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+       5 'barstar aggegate 5'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+       6 'barstar aggegate 6'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+       7 'barstar aggegate 7'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+       8 'barstar aggegate 8'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+       9 'barstar aggegate 9'  1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+      10 'barstar aggegate 10' 1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+      11 'barstar aggegate 11' 1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+      12 'barstar aggegate 12' 1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+      13 'barstar aggegate 13' 1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+      14 'barstar aggegate 14' 1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+      15 'barstar aggegate 15' 1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+      16 'barstar aggegate 16' 1 $Barstar . . . 'molten globule' . . 1 . . 5293 1 
+
+   stop_
+
+   loop_
+      _Assembly_db_link.Author_supplied
+      _Assembly_db_link.Database_code
+      _Assembly_db_link.Accession_code
+      _Assembly_db_link.Entry_mol_code
+      _Assembly_db_link.Entry_mol_name
+      _Assembly_db_link.Entry_experimental_method
+      _Assembly_db_link.Entry_structure_resolution
+      _Assembly_db_link.Entry_relation_type
+      _Assembly_db_link.Entry_details
+      _Assembly_db_link.Entry_ID
+      _Assembly_db_link.Assembly_ID
+
+      yes PDB 1BTA . . . . . '1BTA is structure of its native monomeric state.' 5293 1 
+
+   stop_
+
+   loop_
+      _Assembly_common_name.Name
+      _Assembly_common_name.Type
+      _Assembly_common_name.Entry_ID
+      _Assembly_common_name.Assembly_ID
+
+      'Barstar pH 2.7 160 kD aggregate' system       5293 1 
+       Barstar                          abbreviation 5293 1 
+
+   stop_
+
+   loop_
+      _Assembly_bio_function.Biological_function
+      _Assembly_bio_function.Entry_ID
+      _Assembly_bio_function.Assembly_ID
+
+      'Barnase inhibitor' 5293 1 
+
+   stop_
+
+save_
+
+
+    ####################################
+    #  Biological polymers and ligands #
+    ####################################
+
+save_Barstar
+   _Entity.Sf_category                       entity
+   _Entity.Sf_framecode                      Barstar
+   _Entity.Entry_ID                          5293
+   _Entity.ID                                1
+   _Entity.BMRB_code                         .
+   _Entity.Name                              Barstar
+   _Entity.Type                              polymer
+   _Entity.Polymer_common_type               .
+   _Entity.Polymer_type                      polypeptide(L)
+   _Entity.Polymer_type_details              .
+   _Entity.Polymer_strand_ID                 .
+   _Entity.Polymer_seq_one_letter_code_can   .
+   _Entity.Polymer_seq_one_letter_code      
+;
+KKAVINGEQIRSISDLHQTL
+KKELALPEYYGENLDALWDC
+LTGWVEYPLVLEWRQFEQSK
+QLTENGAESVLQVFREAKAE
+GCDITIILS
+;
+   _Entity.Target_identifier                 .
+   _Entity.Polymer_author_defined_seq        .
+   _Entity.Polymer_author_seq_details        .
+   _Entity.Ambiguous_conformational_states   .
+   _Entity.Ambiguous_chem_comp_sites         .
+   _Entity.Nstd_monomer                      .
+   _Entity.Nstd_chirality                    .
+   _Entity.Nstd_linkage                      .
+   _Entity.Nonpolymer_comp_ID                .
+   _Entity.Nonpolymer_comp_label             .
+   _Entity.Number_of_monomers                89
+   _Entity.Number_of_nonpolymer_components   .
+   _Entity.Paramagnetic                      .
+   _Entity.Thiol_state                      'all free'
+   _Entity.Src_method                        .
+   _Entity.Parent_entity_ID                  .
+   _Entity.Fragment                          .
+   _Entity.Mutation                          .
+   _Entity.EC_number                         .
+   _Entity.Calc_isoelectric_point            .
+   _Entity.Formula_weight                    10100
+   _Entity.Formula_weight_exptl              .
+   _Entity.Formula_weight_exptl_meth         .
+   _Entity.Details                           .
+   _Entity.DB_query_date                     .
+   _Entity.DB_query_revised_last_date        2015-01-28
+
+   loop_
+      _Entity_db_link.Ordinal
+      _Entity_db_link.Author_supplied
+      _Entity_db_link.Database_code
+      _Entity_db_link.Accession_code
+      _Entity_db_link.Entry_mol_code
+      _Entity_db_link.Entry_mol_name
+      _Entity_db_link.Entry_experimental_method
+      _Entity_db_link.Entry_structure_resolution
+      _Entity_db_link.Entry_relation_type
+      _Entity_db_link.Entry_details
+      _Entity_db_link.Chimera_segment_ID
+      _Entity_db_link.Seq_query_to_submitted_percent
+      _Entity_db_link.Seq_subject_length
+      _Entity_db_link.Seq_identity
+      _Entity_db_link.Seq_positive
+      _Entity_db_link.Seq_homology_expectation_val
+      _Entity_db_link.Seq_align_begin
+      _Entity_db_link.Seq_align_end
+      _Entity_db_link.Seq_difference_details
+      _Entity_db_link.Seq_alignment_details
+      _Entity_db_link.Entry_ID
+      _Entity_db_link.Entity_ID
+
+       1 no BMRB         6227 .  Barstar                                                                                                            . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+       2 no BMRB         7126 .  barstar                                                                                                            . . . . . 100.00 89 100.00 100.00 3.16e-57 . . . . 5293 1 
+       3 no PDB  1A19          . "Barstar (Free), C82a Mutant"                                                                                       . . . . . 100.00 90  98.88  98.88 2.79e-56 . . . . 5293 1 
+       4 no PDB  1AB7          . "Nmr 15n Relaxation And Structural Studies Reveal Conformational Exchange In Barstar C4082A, 30 STRUCTURES"         . . . . . 100.00 89  97.75  97.75 2.58e-55 . . . . 5293 1 
+       5 no PDB  1AY7          . "Ribonuclease Sa Complex With Barstar"                                                                              . . . . . 100.00 89 100.00 100.00 3.16e-57 . . . . 5293 1 
+       6 no PDB  1B27          . "Structural Response To Mutation At A Protein-Protein Interface"                                                    . . . . . 100.00 90  97.75  97.75 2.03e-55 . . . . 5293 1 
+       7 no PDB  1B2S          . "Structural Response To Mutation At A Protein-Protein Interface"                                                    . . . . . 100.00 90  98.88  98.88 1.47e-56 . . . . 5293 1 
+       8 no PDB  1B2U          . "Structural Response To Mutation At A Protein-Protein Interface"                                                    . . . . . 100.00 90  98.88  98.88 3.18e-56 . . . . 5293 1 
+       9 no PDB  1B3S          . "Structural Response To Mutation At A Protein-Protein Interface"                                                    . . . . . 100.00 90  98.88 100.00 8.60e-57 . . . . 5293 1 
+      10 no PDB  1BGS          . "Recognition Between A Bacterial Ribonuclease, Barnase, And Its Natural Inhibitor, Barstar"                         . . . . . 100.00 89  97.75  97.75 2.58e-55 . . . . 5293 1 
+      11 no PDB  1BRS          . "Protein-Protein Recognition: Crystal Structural Analysis Of A Barnase-Barstar Complex At 2.0-A Resolution"         . . . . . 100.00 89  97.75  97.75 2.58e-55 . . . . 5293 1 
+      12 no PDB  1BTA          . "Three-Dimensional Solution Structure And 13c Assignments Of Barstar Using Nuclear Magnetic Resonance Spectroscopy" . . . . . 100.00 89 100.00 100.00 3.16e-57 . . . . 5293 1 
+      13 no PDB  1BTB          . "Three-Dimensional Solution Structure And 13c Assignments Of Barstar Using Nuclear Magnetic Resonance Spectroscopy" . . . . . 100.00 89 100.00 100.00 3.16e-57 . . . . 5293 1 
+      14 no PDB  1X1U          . "Water-Mediate Interaction At Aprotein-Protein Interface"                                                           . . . . . 100.00 89  97.75  97.75 2.58e-55 . . . . 5293 1 
+      15 no PDB  3DA7          . "A Conformationally Strained, Circular Permutant Of Barnase"                                                        . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+      16 no EMBL CAA33551      . "unnamed protein product [Bacillus amyloliquefaciens]"                                                              . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+      17 no EMBL CBI41926      . "RBAM_008490 [Bacillus amyloliquefaciens DSM 7]"                                                                    . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+      18 no EMBL CCG48789      . "Barstar Ribonuclease inhibitor [Bacillus amyloliquefaciens subsp. plantarum YAU B9601-Y2]"                         . . . . . 100.00 90  97.75  98.88 3.01e-56 . . . . 5293 1 
+      19 no EMBL CCP20814      . "Barstar [Bacillus amyloliquefaciens subsp. plantarum UCMB5036]"                                                    . . . . .  98.88 96  98.86 100.00 3.37e-56 . . . . 5293 1 
+      20 no EMBL CDG25099      . "Barstar [Bacillus amyloliquefaciens subsp. plantarum UCMB5113]"                                                    . . . . .  98.88 96  98.86 100.00 2.77e-56 . . . . 5293 1 
+      21 no GB   AAM10782      . "barstar [yeast mitochondrial synthetic construct]"                                                                 . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+      22 no GB   AAO92245      . "barnase inhibitor [Cloning vector pHR28A10]"                                                                       . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+      23 no GB   AAP41138      . "barstar [Cloning vector pHRBar-6]"                                                                                 . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+      24 no GB   AAP41140      . "barnase inhibitor [Cloning vector pHRBar-6]"                                                                       . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+      25 no GB   ABS73233      . "putative RNAse inhibitor [Bacillus amyloliquefaciens subsp. plantarum str. FZB42]"                                 . . . . . 100.00 90  97.75  98.88 3.01e-56 . . . . 5293 1 
+      26 no REF  WP_007408543  . "MULTISPECIES: barnase inhibitor [Bacillus]"                                                                        . . . . . 100.00 90  97.75  98.88 3.01e-56 . . . . 5293 1 
+      27 no REF  WP_007610138  . "barnase inhibitor [Bacillus amyloliquefaciens]"                                                                    . . . . .  98.88 96  98.86 100.00 2.77e-56 . . . . 5293 1 
+      28 no REF  WP_013351425  . "barnase inhibitor [Bacillus amyloliquefaciens]"                                                                    . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+      29 no REF  WP_014720882  . "barnase inhibitor [Bacillus amyloliquefaciens]"                                                                    . . . . .  98.88 96  98.86 100.00 3.37e-56 . . . . 5293 1 
+      30 no REF  WP_015239422  . "Barstar Ribonuclease inhibitor [Bacillus amyloliquefaciens]"                                                       . . . . .  86.52 77  98.70 100.00 7.99e-48 . . . . 5293 1 
+      31 no SP   P11540        . "RecName: Full=Barstar; AltName: Full=Ribonuclease inhibitor [Bacillus amyloliquefaciens]"                          . . . . . 100.00 90 100.00 100.00 2.77e-57 . . . . 5293 1 
+
+   stop_
+
+   loop_
+      _Entity_common_name.Name
+      _Entity_common_name.Type
+      _Entity_common_name.Entry_ID
+      _Entity_common_name.Entity_ID
+
+      Barstar common       5293 1 
+      Barstar abbreviation 5293 1 
+
+   stop_
+
+   loop_
+      _Entity_comp_index.ID
+      _Entity_comp_index.Auth_seq_ID
+      _Entity_comp_index.Comp_ID
+      _Entity_comp_index.Comp_label
+      _Entity_comp_index.Entry_ID
+      _Entity_comp_index.Entity_ID
+
+       1 . LYS . 5293 1 
+       2 . LYS . 5293 1 
+       3 . ALA . 5293 1 
+       4 . VAL . 5293 1 
+       5 . ILE . 5293 1 
+       6 . ASN . 5293 1 
+       7 . GLY . 5293 1 
+       8 . GLU . 5293 1 
+       9 . GLN . 5293 1 
+      10 . ILE . 5293 1 
+      11 . ARG . 5293 1 
+      12 . SER . 5293 1 
+      13 . ILE . 5293 1 
+      14 . SER . 5293 1 
+      15 . ASP . 5293 1 
+      16 . LEU . 5293 1 
+      17 . HIS . 5293 1 
+      18 . GLN . 5293 1 
+      19 . THR . 5293 1 
+      20 . LEU . 5293 1 
+      21 . LYS . 5293 1 
+      22 . LYS . 5293 1 
+      23 . GLU . 5293 1 
+      24 . LEU . 5293 1 
+      25 . ALA . 5293 1 
+      26 . LEU . 5293 1 
+      27 . PRO . 5293 1 
+      28 . GLU . 5293 1 
+      29 . TYR . 5293 1 
+      30 . TYR . 5293 1 
+      31 . GLY . 5293 1 
+      32 . GLU . 5293 1 
+      33 . ASN . 5293 1 
+      34 . LEU . 5293 1 
+      35 . ASP . 5293 1 
+      36 . ALA . 5293 1 
+      37 . LEU . 5293 1 
+      38 . TRP . 5293 1 
+      39 . ASP . 5293 1 
+      40 . CYS . 5293 1 
+      41 . LEU . 5293 1 
+      42 . THR . 5293 1 
+      43 . GLY . 5293 1 
+      44 . TRP . 5293 1 
+      45 . VAL . 5293 1 
+      46 . GLU . 5293 1 
+      47 . TYR . 5293 1 
+      48 . PRO . 5293 1 
+      49 . LEU . 5293 1 
+      50 . VAL . 5293 1 
+      51 . LEU . 5293 1 
+      52 . GLU . 5293 1 
+      53 . TRP . 5293 1 
+      54 . ARG . 5293 1 
+      55 . GLN . 5293 1 
+      56 . PHE . 5293 1 
+      57 . GLU . 5293 1 
+      58 . GLN . 5293 1 
+      59 . SER . 5293 1 
+      60 . LYS . 5293 1 
+      61 . GLN . 5293 1 
+      62 . LEU . 5293 1 
+      63 . THR . 5293 1 
+      64 . GLU . 5293 1 
+      65 . ASN . 5293 1 
+      66 . GLY . 5293 1 
+      67 . ALA . 5293 1 
+      68 . GLU . 5293 1 
+      69 . SER . 5293 1 
+      70 . VAL . 5293 1 
+      71 . LEU . 5293 1 
+      72 . GLN . 5293 1 
+      73 . VAL . 5293 1 
+      74 . PHE . 5293 1 
+      75 . ARG . 5293 1 
+      76 . GLU . 5293 1 
+      77 . ALA . 5293 1 
+      78 . LYS . 5293 1 
+      79 . ALA . 5293 1 
+      80 . GLU . 5293 1 
+      81 . GLY . 5293 1 
+      82 . CYS . 5293 1 
+      83 . ASP . 5293 1 
+      84 . ILE . 5293 1 
+      85 . THR . 5293 1 
+      86 . ILE . 5293 1 
+      87 . ILE . 5293 1 
+      88 . LEU . 5293 1 
+      89 . SER . 5293 1 
+
+   stop_
+
+   loop_
+      _Entity_poly_seq.Hetero
+      _Entity_poly_seq.Mon_ID
+      _Entity_poly_seq.Num
+      _Entity_poly_seq.Comp_index_ID
+      _Entity_poly_seq.Entry_ID
+      _Entity_poly_seq.Entity_ID
+
+      . LYS  1  1 5293 1 
+      . LYS  2  2 5293 1 
+      . ALA  3  3 5293 1 
+      . VAL  4  4 5293 1 
+      . ILE  5  5 5293 1 
+      . ASN  6  6 5293 1 
+      . GLY  7  7 5293 1 
+      . GLU  8  8 5293 1 
+      . GLN  9  9 5293 1 
+      . ILE 10 10 5293 1 
+      . ARG 11 11 5293 1 
+      . SER 12 12 5293 1 
+      . ILE 13 13 5293 1 
+      . SER 14 14 5293 1 
+      . ASP 15 15 5293 1 
+      . LEU 16 16 5293 1 
+      . HIS 17 17 5293 1 
+      . GLN 18 18 5293 1 
+      . THR 19 19 5293 1 
+      . LEU 20 20 5293 1 
+      . LYS 21 21 5293 1 
+      . LYS 22 22 5293 1 
+      . GLU 23 23 5293 1 
+      . LEU 24 24 5293 1 
+      . ALA 25 25 5293 1 
+      . LEU 26 26 5293 1 
+      . PRO 27 27 5293 1 
+      . GLU 28 28 5293 1 
+      . TYR 29 29 5293 1 
+      . TYR 30 30 5293 1 
+      . GLY 31 31 5293 1 
+      . GLU 32 32 5293 1 
+      . ASN 33 33 5293 1 
+      . LEU 34 34 5293 1 
+      . ASP 35 35 5293 1 
+      . ALA 36 36 5293 1 
+      . LEU 37 37 5293 1 
+      . TRP 38 38 5293 1 
+      . ASP 39 39 5293 1 
+      . CYS 40 40 5293 1 
+      . LEU 41 41 5293 1 
+      . THR 42 42 5293 1 
+      . GLY 43 43 5293 1 
+      . TRP 44 44 5293 1 
+      . VAL 45 45 5293 1 
+      . GLU 46 46 5293 1 
+      . TYR 47 47 5293 1 
+      . PRO 48 48 5293 1 
+      . LEU 49 49 5293 1 
+      . VAL 50 50 5293 1 
+      . LEU 51 51 5293 1 
+      . GLU 52 52 5293 1 
+      . TRP 53 53 5293 1 
+      . ARG 54 54 5293 1 
+      . GLN 55 55 5293 1 
+      . PHE 56 56 5293 1 
+      . GLU 57 57 5293 1 
+      . GLN 58 58 5293 1 
+      . SER 59 59 5293 1 
+      . LYS 60 60 5293 1 
+      . GLN 61 61 5293 1 
+      . LEU 62 62 5293 1 
+      . THR 63 63 5293 1 
+      . GLU 64 64 5293 1 
+      . ASN 65 65 5293 1 
+      . GLY 66 66 5293 1 
+      . ALA 67 67 5293 1 
+      . GLU 68 68 5293 1 
+      . SER 69 69 5293 1 
+      . VAL 70 70 5293 1 
+      . LEU 71 71 5293 1 
+      . GLN 72 72 5293 1 
+      . VAL 73 73 5293 1 
+      . PHE 74 74 5293 1 
+      . ARG 75 75 5293 1 
+      . GLU 76 76 5293 1 
+      . ALA 77 77 5293 1 
+      . LYS 78 78 5293 1 
+      . ALA 79 79 5293 1 
+      . GLU 80 80 5293 1 
+      . GLY 81 81 5293 1 
+      . CYS 82 82 5293 1 
+      . ASP 83 83 5293 1 
+      . ILE 84 84 5293 1 
+      . THR 85 85 5293 1 
+      . ILE 86 86 5293 1 
+      . ILE 87 87 5293 1 
+      . LEU 88 88 5293 1 
+      . SER 89 89 5293 1 
+
+   stop_
+
+save_
+
+
+    ####################
+    #  Natural source  #
+    ####################
+
+save_natural_source
+   _Entity_natural_src_list.Sf_category    natural_source
+   _Entity_natural_src_list.Sf_framecode   natural_source
+   _Entity_natural_src_list.Entry_ID       5293
+   _Entity_natural_src_list.ID             1
+
+   loop_
+      _Entity_natural_src.ID
+      _Entity_natural_src.Entity_ID
+      _Entity_natural_src.Entity_label
+      _Entity_natural_src.Entity_chimera_segment_ID
+      _Entity_natural_src.NCBI_taxonomy_ID
+      _Entity_natural_src.Type
+      _Entity_natural_src.Common
+      _Entity_natural_src.Organism_name_scientific
+      _Entity_natural_src.Organism_name_common
+      _Entity_natural_src.Organism_acronym
+      _Entity_natural_src.ICTVdb_decimal_code
+      _Entity_natural_src.Superkingdom
+      _Entity_natural_src.Kingdom
+      _Entity_natural_src.Genus
+      _Entity_natural_src.Species
+      _Entity_natural_src.Strain
+      _Entity_natural_src.Variant
+      _Entity_natural_src.Subvariant
+      _Entity_natural_src.Organ
+      _Entity_natural_src.Tissue
+      _Entity_natural_src.Tissue_fraction
+      _Entity_natural_src.Cell_line
+      _Entity_natural_src.Cell_type
+      _Entity_natural_src.ATCC_number
+      _Entity_natural_src.Organelle
+      _Entity_natural_src.Cellular_location
+      _Entity_natural_src.Fragment
+      _Entity_natural_src.Fraction
+      _Entity_natural_src.Secretion
+      _Entity_natural_src.Plasmid
+      _Entity_natural_src.Plasmid_details
+      _Entity_natural_src.Gene_mnemonic
+      _Entity_natural_src.Dev_stage
+      _Entity_natural_src.Details
+      _Entity_natural_src.Citation_ID
+      _Entity_natural_src.Citation_label
+      _Entity_natural_src.Entry_ID
+      _Entity_natural_src.Entity_natural_src_list_ID
+
+      1 1 $Barstar . 1390 . . 'Bacillus amyloliquefaciens' 'Bacillus amyloliquefaciens' . . Eubacteria . Bacillus amyloliquefaciens . . . . . . . . . . . . . . . . . . . . . 5293 1 
+
+   stop_
+
+save_
+
+
+    #########################
+    #  Experimental source  #
+    #########################
+
+save_experimental_source
+   _Entity_experimental_src_list.Sf_category    experimental_source
+   _Entity_experimental_src_list.Sf_framecode   experimental_source
+   _Entity_experimental_src_list.Entry_ID       5293
+   _Entity_experimental_src_list.ID             1
+
+   loop_
+      _Entity_experimental_src.ID
+      _Entity_experimental_src.Entity_ID
+      _Entity_experimental_src.Entity_label
+      _Entity_experimental_src.Entity_chimera_segment_ID
+      _Entity_experimental_src.Production_method
+      _Entity_experimental_src.Host_org_scientific_name
+      _Entity_experimental_src.Host_org_name_common
+      _Entity_experimental_src.Host_org_details
+      _Entity_experimental_src.Host_org_NCBI_taxonomy_ID
+      _Entity_experimental_src.Host_org_genus
+      _Entity_experimental_src.Host_org_species
+      _Entity_experimental_src.Host_org_strain
+      _Entity_experimental_src.Host_org_variant
+      _Entity_experimental_src.Host_org_subvariant
+      _Entity_experimental_src.Host_org_organ
+      _Entity_experimental_src.Host_org_tissue
+      _Entity_experimental_src.Host_org_tissue_fraction
+      _Entity_experimental_src.Host_org_cell_line
+      _Entity_experimental_src.Host_org_cell_type
+      _Entity_experimental_src.Host_org_cellular_location
+      _Entity_experimental_src.Host_org_organelle
+      _Entity_experimental_src.Host_org_gene
+      _Entity_experimental_src.Host_org_culture_collection
+      _Entity_experimental_src.Host_org_ATCC_number
+      _Entity_experimental_src.Vector_type
+      _Entity_experimental_src.PDBview_host_org_vector_name
+      _Entity_experimental_src.PDBview_plasmid_name
+      _Entity_experimental_src.Vector_name
+      _Entity_experimental_src.Vector_details
+      _Entity_experimental_src.Vendor_name
+      _Entity_experimental_src.Host_org_dev_stage
+      _Entity_experimental_src.Details
+      _Entity_experimental_src.Citation_ID
+      _Entity_experimental_src.Citation_label
+      _Entity_experimental_src.Entry_ID
+      _Entity_experimental_src.Entity_experimental_src_list_ID
+
+      1 1 $Barstar . 'recombinant technology' 'Escherichia coli' 'E. coli' . . Escherichia coli MM294 . . . . . . . . . . . . plasmid . . pMT316 . . . . . . 5293 1 
+
+   stop_
+
+save_
+
+
+#####################################
+#  Sample contents and methodology  #
+#####################################
+	 
+    ########################
+    #  Sample description  #
+    ########################
+
+save_sample_1
+   _Sample.Sf_category                      sample
+   _Sample.Sf_framecode                     sample_1
+   _Sample.Entry_ID                         5293
+   _Sample.ID                               1
+   _Sample.Type                             solution
+   _Sample.Sub_type                         .
+   _Sample.Details                         
+;
+Lyophilized protein was dissolved in 90% H2O/ 10% D2O to a final pH of 2.7 to
+form the A form of barstar.  
+The samples were equilibrated at pH 2.7 for at least 10 hours before 
+collecting spectra.
+;
+   _Sample.Aggregate_sample_number          .
+   _Sample.Solvent_system                   .
+   _Sample.Preparation_date                 .
+   _Sample.Preparation_expiration_date      .
+   _Sample.Polycrystallization_protocol     .
+   _Sample.Single_crystal_protocol          .
+   _Sample.Crystal_grow_apparatus           .
+   _Sample.Crystal_grow_atmosphere          .
+   _Sample.Crystal_grow_details             .
+   _Sample.Crystal_grow_method              .
+   _Sample.Crystal_grow_method_cit_ID       .
+   _Sample.Crystal_grow_pH                  .
+   _Sample.Crystal_grow_pH_range            .
+   _Sample.Crystal_grow_pressure            .
+   _Sample.Crystal_grow_pressure_esd        .
+   _Sample.Crystal_grow_seeding             .
+   _Sample.Crystal_grow_seeding_cit_ID      .
+   _Sample.Crystal_grow_temp                .
+   _Sample.Crystal_grow_temp_details        .
+   _Sample.Crystal_grow_temp_esd            .
+   _Sample.Crystal_grow_time                .
+   _Sample.Oriented_sample_prep_protocol    .
+   _Sample.Lyophilization_cryo_protectant   .
+   _Sample.Storage_protocol                 .
+
+   loop_
+      _Sample_component.ID
+      _Sample_component.Mol_common_name
+      _Sample_component.Isotopic_labeling
+      _Sample_component.Assembly_ID
+      _Sample_component.Assembly_label
+      _Sample_component.Entity_ID
+      _Sample_component.Entity_label
+      _Sample_component.Product_ID
+      _Sample_component.Type
+      _Sample_component.Concentration_val
+      _Sample_component.Concentration_val_min
+      _Sample_component.Concentration_val_max
+      _Sample_component.Concentration_val_units
+      _Sample_component.Concentration_val_err
+      _Sample_component.Vendor
+      _Sample_component.Vendor_product_name
+      _Sample_component.Vendor_product_code
+      _Sample_component.Entry_ID
+      _Sample_component.Sample_ID
+
+      1 Barstar '[U-90% 15N]' . . 1 $Barstar . . 1.2 . . mM . . . . 5293 1 
+
+   stop_
+
+save_
+
+
+save_sample_2
+   _Sample.Sf_category                      sample
+   _Sample.Sf_framecode                     sample_2
+   _Sample.Entry_ID                         5293
+   _Sample.ID                               2
+   _Sample.Type                             solution
+   _Sample.Sub_type                         .
+   _Sample.Details                          .
+   _Sample.Aggregate_sample_number          .
+   _Sample.Solvent_system                   .
+   _Sample.Preparation_date                 .
+   _Sample.Preparation_expiration_date      .
+   _Sample.Polycrystallization_protocol     .
+   _Sample.Single_crystal_protocol          .
+   _Sample.Crystal_grow_apparatus           .
+   _Sample.Crystal_grow_atmosphere          .
+   _Sample.Crystal_grow_details             .
+   _Sample.Crystal_grow_method              .
+   _Sample.Crystal_grow_method_cit_ID       .
+   _Sample.Crystal_grow_pH                  .
+   _Sample.Crystal_grow_pH_range            .
+   _Sample.Crystal_grow_pressure            .
+   _Sample.Crystal_grow_pressure_esd        .
+   _Sample.Crystal_grow_seeding             .
+   _Sample.Crystal_grow_seeding_cit_ID      .
+   _Sample.Crystal_grow_temp                .
+   _Sample.Crystal_grow_temp_details        .
+   _Sample.Crystal_grow_temp_esd            .
+   _Sample.Crystal_grow_time                .
+   _Sample.Oriented_sample_prep_protocol    .
+   _Sample.Lyophilization_cryo_protectant   .
+   _Sample.Storage_protocol                 .
+
+   loop_
+      _Sample_component.ID
+      _Sample_component.Mol_common_name
+      _Sample_component.Isotopic_labeling
+      _Sample_component.Assembly_ID
+      _Sample_component.Assembly_label
+      _Sample_component.Entity_ID
+      _Sample_component.Entity_label
+      _Sample_component.Product_ID
+      _Sample_component.Type
+      _Sample_component.Concentration_val
+      _Sample_component.Concentration_val_min
+      _Sample_component.Concentration_val_max
+      _Sample_component.Concentration_val_units
+      _Sample_component.Concentration_val_err
+      _Sample_component.Vendor
+      _Sample_component.Vendor_product_name
+      _Sample_component.Vendor_product_code
+      _Sample_component.Entry_ID
+      _Sample_component.Sample_ID
+
+      1 Barstar '[U-95% 13C; U-90% 15N]' . . 1 $Barstar . . 1.2 . . mM . . . . 5293 2 
+
+   stop_
+
+save_
+
+
+save_sample_3
+   _Sample.Sf_category                      sample
+   _Sample.Sf_framecode                     sample_3
+   _Sample.Entry_ID                         5293
+   _Sample.ID                               3
+   _Sample.Type                             solution
+   _Sample.Sub_type                         .
+   _Sample.Details                          .
+   _Sample.Aggregate_sample_number          .
+   _Sample.Solvent_system                   .
+   _Sample.Preparation_date                 .
+   _Sample.Preparation_expiration_date      .
+   _Sample.Polycrystallization_protocol     .
+   _Sample.Single_crystal_protocol          .
+   _Sample.Crystal_grow_apparatus           .
+   _Sample.Crystal_grow_atmosphere          .
+   _Sample.Crystal_grow_details             .
+   _Sample.Crystal_grow_method              .
+   _Sample.Crystal_grow_method_cit_ID       .
+   _Sample.Crystal_grow_pH                  .
+   _Sample.Crystal_grow_pH_range            .
+   _Sample.Crystal_grow_pressure            .
+   _Sample.Crystal_grow_pressure_esd        .
+   _Sample.Crystal_grow_seeding             .
+   _Sample.Crystal_grow_seeding_cit_ID      .
+   _Sample.Crystal_grow_temp                .
+   _Sample.Crystal_grow_temp_details        .
+   _Sample.Crystal_grow_temp_esd            .
+   _Sample.Crystal_grow_time                .
+   _Sample.Oriented_sample_prep_protocol    .
+   _Sample.Lyophilization_cryo_protectant   .
+   _Sample.Storage_protocol                 .
+
+   loop_
+      _Sample_component.ID
+      _Sample_component.Mol_common_name
+      _Sample_component.Isotopic_labeling
+      _Sample_component.Assembly_ID
+      _Sample_component.Assembly_label
+      _Sample_component.Entity_ID
+      _Sample_component.Entity_label
+      _Sample_component.Product_ID
+      _Sample_component.Type
+      _Sample_component.Concentration_val
+      _Sample_component.Concentration_val_min
+      _Sample_component.Concentration_val_max
+      _Sample_component.Concentration_val_units
+      _Sample_component.Concentration_val_err
+      _Sample_component.Vendor
+      _Sample_component.Vendor_product_name
+      _Sample_component.Vendor_product_code
+      _Sample_component.Entry_ID
+      _Sample_component.Sample_ID
+
+      1 Barstar . . . 1 $Barstar . . 1.2 . . mM . . . . 5293 3 
+
+   stop_
+
+save_
+
+
+#######################
+#  Sample conditions  #
+#######################
+
+save_Cond_1
+   _Sample_condition_list.Sf_category    sample_conditions
+   _Sample_condition_list.Sf_framecode   Cond_1
+   _Sample_condition_list.Entry_ID       5293
+   _Sample_condition_list.ID             1
+   _Sample_condition_list.Details        .
+
+   loop_
+      _Sample_condition_variable.Type
+      _Sample_condition_variable.Val
+      _Sample_condition_variable.Val_err
+      _Sample_condition_variable.Val_units
+      _Sample_condition_variable.Entry_ID
+      _Sample_condition_variable.Sample_condition_list_ID
+
+      pH            2.7 0.1 na   5293 1 
+      temperature 298   0.1 K    5293 1 
+      pressure    760    .  mmHg 5293 1 
+
+   stop_
+
+save_
+
+
+############################
+#  Computer software used  #
+############################
+
+save_Felix
+   _Software.Sf_category    software
+   _Software.Sf_framecode   Felix
+   _Software.Entry_ID       5293
+   _Software.ID             1
+   _Software.Name           Felix
+   _Software.Version        97
+   _Software.Details        .
+
+   loop_
+      _Task.Task
+      _Task.Entry_ID
+      _Task.Software_ID
+
+      'data processing'      5293 1 
+      'resonance assignment' 5293 1 
+
+   stop_
+
+save_
+
+
+#########################
+#  Experimental detail  #
+#########################
+
+    ##################################
+    #  NMR Spectrometer definitions  #
+    ##################################
+
+save_NMR_spectrometer
+   _NMR_spectrometer.Sf_category      NMR_spectrometer
+   _NMR_spectrometer.Sf_framecode     NMR_spectrometer
+   _NMR_spectrometer.Entry_ID         5293
+   _NMR_spectrometer.ID               1
+   _NMR_spectrometer.Details          .
+   _NMR_spectrometer.Manufacturer     Varian
+   _NMR_spectrometer.Model            Unityplus
+   _NMR_spectrometer.Serial_number    .
+   _NMR_spectrometer.Field_strength   600
+
+save_
+
+
+save_spectrometer_list
+   _NMR_spectrometer_list.Sf_category    NMR_spectrometer_list
+   _NMR_spectrometer_list.Sf_framecode   spectrometer_list
+   _NMR_spectrometer_list.Entry_ID       5293
+   _NMR_spectrometer_list.ID             1
+
+   loop_
+      _NMR_spectrometer_view.ID
+      _NMR_spectrometer_view.Name
+      _NMR_spectrometer_view.Manufacturer
+      _NMR_spectrometer_view.Model
+      _NMR_spectrometer_view.Serial_number
+      _NMR_spectrometer_view.Field_strength
+      _NMR_spectrometer_view.Details
+      _NMR_spectrometer_view.Citation_ID
+      _NMR_spectrometer_view.Citation_label
+      _NMR_spectrometer_view.Entry_ID
+      _NMR_spectrometer_view.NMR_spectrometer_list_ID
+
+      1 NMR_spectrometer Varian Unityplus . 600 . . . 5293 1 
+
+   stop_
+
+save_
+
+
+    #############################
+    #  NMR applied experiments  #
+    #############################
+
+save_experiment_list
+   _Experiment_list.Sf_category    experiment_list
+   _Experiment_list.Sf_framecode   experiment_list
+   _Experiment_list.Entry_ID       5293
+   _Experiment_list.ID             1
+   _Experiment_list.Details        .
+
+   loop_
+      _Experiment.ID
+      _Experiment.Name
+      _Experiment.Raw_data_flag
+      _Experiment.NMR_spec_expt_ID
+      _Experiment.NMR_spec_expt_label
+      _Experiment.MS_expt_ID
+      _Experiment.MS_expt_label
+      _Experiment.SAXS_expt_ID
+      _Experiment.SAXS_expt_label
+      _Experiment.FRET_expt_ID
+      _Experiment.FRET_expt_label
+      _Experiment.EMR_expt_ID
+      _Experiment.EMR_expt_label
+      _Experiment.Sample_ID
+      _Experiment.Sample_label
+      _Experiment.Sample_state
+      _Experiment.Sample_volume
+      _Experiment.Sample_volume_units
+      _Experiment.Sample_condition_list_ID
+      _Experiment.Sample_condition_list_label
+      _Experiment.Sample_spinning_rate
+      _Experiment.Sample_angle
+      _Experiment.NMR_tube_type
+      _Experiment.NMR_spectrometer_ID
+      _Experiment.NMR_spectrometer_label
+      _Experiment.NMR_spectrometer_probe_ID
+      _Experiment.NMR_spectrometer_probe_label
+      _Experiment.NMR_spectral_processing_ID
+      _Experiment.NMR_spectral_processing_label
+      _Experiment.Mass_spectrometer_ID
+      _Experiment.Mass_spectrometer_label
+      _Experiment.Xray_instrument_ID
+      _Experiment.Xray_instrument_label
+      _Experiment.Fluorescence_instrument_ID
+      _Experiment.Fluorescence_instrument_label
+      _Experiment.EMR_instrument_ID
+      _Experiment.EMR_instrument_label
+      _Experiment.Chromatographic_system_ID
+      _Experiment.Chromatographic_system_label
+      _Experiment.Chromatographic_column_ID
+      _Experiment.Chromatographic_column_label
+      _Experiment.Entry_ID
+      _Experiment.Experiment_list_ID
+
+       1 '1H-15N HSQC'       . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+       2  HNN                . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+       3  HN(C)N             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+       4 '1H-15N NOESY-HSQC' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+       5 '1H-15N HSQC-TOCSY' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+       6 '1H-15N TOCSY-HSQC' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+       7  HNCA               . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+       8  HN(CO)CA           . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+       9  HNCO               . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+      10  CBCANH             . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+      11  CBCA(CO)NH         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+      12  HNHA               . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+      13 '1H-1H TOCSY'       . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+      14 '1H-1H NOESY'       . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5293 1 
+
+   stop_
+
+save_
+
+
+save_NMR_spec_expt__0_1
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_1
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              1
+   _NMR_spec_expt.Name                           '1H-15N HSQC'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_2
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_2
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              2
+   _NMR_spec_expt.Name                            HNN
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_3
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_3
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              3
+   _NMR_spec_expt.Name                            HN(C)N
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_4
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_4
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              4
+   _NMR_spec_expt.Name                           '1H-15N NOESY-HSQC'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_5
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_5
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              5
+   _NMR_spec_expt.Name                           '1H-15N HSQC-TOCSY'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_6
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_6
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              6
+   _NMR_spec_expt.Name                           '1H-15N TOCSY-HSQC'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_7
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_7
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              7
+   _NMR_spec_expt.Name                            HNCA
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_8
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_8
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              8
+   _NMR_spec_expt.Name                            HN(CO)CA
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_9
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_9
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              9
+   _NMR_spec_expt.Name                            HNCO
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_10
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_10
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              10
+   _NMR_spec_expt.Name                            CBCANH
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_11
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_11
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              11
+   _NMR_spec_expt.Name                            CBCA(CO)NH
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_12
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_12
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              12
+   _NMR_spec_expt.Name                            HNHA
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_13
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_13
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              13
+   _NMR_spec_expt.Name                           '1H-1H TOCSY'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+save_NMR_spec_expt__0_14
+   _NMR_spec_expt.Sf_category                     NMR_spectrometer_expt
+   _NMR_spec_expt.Sf_framecode                    NMR_spec_expt__0_14
+   _NMR_spec_expt.Entry_ID                        5293
+   _NMR_spec_expt.ID                              14
+   _NMR_spec_expt.Name                           '1H-1H NOESY'
+   _NMR_spec_expt.Type                            .
+   _NMR_spec_expt.Sample_volume                   .
+   _NMR_spec_expt.Sample_volume_units             .
+   _NMR_spec_expt.NMR_tube_type                   .
+   _NMR_spec_expt.Sample_spinning_rate            .
+   _NMR_spec_expt.Sample_angle                    .
+   _NMR_spec_expt.NMR_spectrometer_ID             .
+   _NMR_spec_expt.NMR_spectrometer_label          .
+   _NMR_spec_expt.NMR_spectrometer_probe_ID       .
+   _NMR_spec_expt.NMR_spectrometer_probe_label    .
+   _NMR_spec_expt.Carrier_freq_switch_time        .
+   _NMR_spec_expt.Software_ID                     .
+   _NMR_spec_expt.Software_label                  .
+   _NMR_spec_expt.Method_ID                       .
+   _NMR_spec_expt.Method_label                    .
+   _NMR_spec_expt.Pulse_seq_accession_BMRB_code   .
+   _NMR_spec_expt.Details                         .
+
+save_
+
+
+####################
+#  NMR parameters  #
+####################
+
+    ##############################
+    #  Assigned chemical shifts  #
+    ##############################
+
+	################################
+	#  Chemical shift referencing  #
+	################################
+
+save_chemical_shift_reference
+   _Chem_shift_reference.Sf_category    chem_shift_reference
+   _Chem_shift_reference.Sf_framecode   chemical_shift_reference
+   _Chem_shift_reference.Entry_ID       5293
+   _Chem_shift_reference.ID             1
+   _Chem_shift_reference.Details        .
+
+   loop_
+      _Chem_shift_ref.Atom_type
+      _Chem_shift_ref.Atom_isotope_number
+      _Chem_shift_ref.Mol_common_name
+      _Chem_shift_ref.Atom_group
+      _Chem_shift_ref.Concentration_val
+      _Chem_shift_ref.Concentration_units
+      _Chem_shift_ref.Solvent
+      _Chem_shift_ref.Rank
+      _Chem_shift_ref.Chem_shift_units
+      _Chem_shift_ref.Chem_shift_val
+      _Chem_shift_ref.Ref_method
+      _Chem_shift_ref.Ref_type
+      _Chem_shift_ref.Indirect_shift_ratio
+      _Chem_shift_ref.External_ref_loc
+      _Chem_shift_ref.External_ref_sample_geometry
+      _Chem_shift_ref.External_ref_axis
+      _Chem_shift_ref.Indirect_shift_ratio_cit_ID
+      _Chem_shift_ref.Indirect_shift_ratio_cit_label
+      _Chem_shift_ref.Ref_correction_type
+      _Chem_shift_ref.Correction_val
+      _Chem_shift_ref.Correction_val_cit_ID
+      _Chem_shift_ref.Correction_val_cit_label
+      _Chem_shift_ref.Entry_ID
+      _Chem_shift_ref.Chem_shift_reference_ID
+
+      H  1 DSS 'methyl protons' . . . . ppm 0.0 internal direct   1.000000000 . . . . . . . . . 5293 1 
+      N 15 DSS 'methyl protons' . . . . ppm 0.0 .        indirect 0.101329118 . . . . . . . . . 5293 1 
+      C 13 DSS 'methyl protons' . . . . ppm 0.0 .        indirect 0.251449530 . . . . . . . . . 5293 1 
+
+   stop_
+
+save_
+
+
+     ###################################
+     #  Assigned chemical shift lists  #
+     ###################################
+
+###################################################################
+#       Chemical Shift Ambiguity Index Value Definitions          #
+#                                                                 #
+# The values other than 1 are used for those atoms with different #
+# chemical shifts that cannot be assigned to stereospecific atoms #
+# or to specific residues or chains.                              #
+#                                                                 #
+#   Index Value            Definition                             #
+#                                                                 #
+#      1             Unique (including isolated methyl protons,   #
+#                         geminal atoms, and geminal methyl       #
+#                         groups with identical chemical shifts)  #
+#                         (e.g. ILE HD11, HD12, HD13 protons)     #
+#      2             Ambiguity of geminal atoms or geminal methyl #
+#                         proton groups (e.g. ASP HB2 and HB3     #
+#                         protons, LEU CD1 and CD2 carbons, or    #
+#                         LEU HD11, HD12, HD13 and HD21, HD22,    #
+#                         HD23 methyl protons)                    #
+#      3             Aromatic atoms on opposite sides of          #
+#                         symmetrical rings (e.g. TYR HE1 and HE2 #
+#                         protons)                                #
+#      4             Intraresidue ambiguities (e.g. LYS HG and    #
+#                         HD protons or TRP HZ2 and HZ3 protons)  #
+#      5             Interresidue ambiguities (LYS 12 vs. LYS 27) #
+#      6             Intermolecular ambiguities (e.g. ASP 31 CA   #
+#                         in monomer 1 and ASP 31 CA in monomer 2 #
+#                         of an asymmetrical homodimer, duplex    #
+#                         DNA assignments, or other assignments   #
+#                         that may apply to atoms in one or more  #
+#                         molecule in the molecular assembly)     #
+#      9             Ambiguous, specific ambiguity not defined    #
+#                                                                 #
+###################################################################
+save_shift_set_1
+   _Assigned_chem_shift_list.Sf_category                   assigned_chemical_shifts
+   _Assigned_chem_shift_list.Sf_framecode                  shift_set_1
+   _Assigned_chem_shift_list.Entry_ID                      5293
+   _Assigned_chem_shift_list.ID                            1
+   _Assigned_chem_shift_list.Sample_condition_list_ID      1
+   _Assigned_chem_shift_list.Sample_condition_list_label  $Cond_1
+   _Assigned_chem_shift_list.Chem_shift_reference_ID       1
+   _Assigned_chem_shift_list.Chem_shift_reference_label   $chemical_shift_reference
+   _Assigned_chem_shift_list.Chem_shift_1H_err             .
+   _Assigned_chem_shift_list.Chem_shift_13C_err            .
+   _Assigned_chem_shift_list.Chem_shift_15N_err            .
+   _Assigned_chem_shift_list.Chem_shift_31P_err            .
+   _Assigned_chem_shift_list.Chem_shift_2H_err             .
+   _Assigned_chem_shift_list.Chem_shift_19F_err            .
+   _Assigned_chem_shift_list.Error_derivation_method       .
+   _Assigned_chem_shift_list.Details                       .
+   _Assigned_chem_shift_list.Text_data_format              .
+   _Assigned_chem_shift_list.Text_data                     .
+
+   loop_
+      _Chem_shift_experiment.Experiment_ID
+      _Chem_shift_experiment.Experiment_name
+      _Chem_shift_experiment.Sample_ID
+      _Chem_shift_experiment.Sample_label
+      _Chem_shift_experiment.Sample_state
+      _Chem_shift_experiment.Entry_ID
+      _Chem_shift_experiment.Assigned_chem_shift_list_ID
+
+       1 '1H-15N HSQC'       . . . 5293 1 
+       2  HNN                . . . 5293 1 
+       3  HN(C)N             . . . 5293 1 
+       4 '1H-15N NOESY-HSQC' . . . 5293 1 
+       5 '1H-15N HSQC-TOCSY' . . . 5293 1 
+       6 '1H-15N TOCSY-HSQC' . . . 5293 1 
+       7  HNCA               . . . 5293 1 
+       8  HN(CO)CA           . . . 5293 1 
+       9  HNCO               . . . 5293 1 
+      10  CBCANH             . . . 5293 1 
+      11  CBCA(CO)NH         . . . 5293 1 
+      12  HNHA               . . . 5293 1 
+      13 '1H-1H TOCSY'       . . . 5293 1 
+      14 '1H-1H NOESY'       . . . 5293 1 
+
+   stop_
+
+   loop_
+      _Atom_chem_shift.ID
+      _Atom_chem_shift.Assembly_atom_ID
+      _Atom_chem_shift.Entity_assembly_ID
+      _Atom_chem_shift.Entity_ID
+      _Atom_chem_shift.Comp_index_ID
+      _Atom_chem_shift.Seq_ID
+      _Atom_chem_shift.Comp_ID
+      _Atom_chem_shift.Atom_ID
+      _Atom_chem_shift.Atom_type
+      _Atom_chem_shift.Atom_isotope_number
+      _Atom_chem_shift.Val
+      _Atom_chem_shift.Val_err
+      _Atom_chem_shift.Assign_fig_of_merit
+      _Atom_chem_shift.Ambiguity_code
+      _Atom_chem_shift.Occupancy
+      _Atom_chem_shift.Resonance_ID
+      _Atom_chem_shift.Auth_entity_assembly_ID
+      _Atom_chem_shift.Auth_asym_ID
+      _Atom_chem_shift.Auth_seq_ID
+      _Atom_chem_shift.Auth_comp_ID
+      _Atom_chem_shift.Auth_atom_ID
+      _Atom_chem_shift.Details
+      _Atom_chem_shift.Entry_ID
+      _Atom_chem_shift.Assigned_chem_shift_list_ID
+
+        1 . 1 1  1  1 LYS H    H  1   8.73 0.02 . 1 . . . . . . . . 5293 1 
+        2 . 1 1  1  1 LYS HA   H  1   4.39 0.02 . 1 . . . . . . . . 5293 1 
+        3 . 1 1  1  1 LYS HB2  H  1   1.82 0.02 . 1 . . . . . . . . 5293 1 
+        4 . 1 1  1  1 LYS HB3  H  1   1.78 0.02 . 1 . . . . . . . . 5293 1 
+        5 . 1 1  1  1 LYS HG2  H  1   1.45 0.02 . 1 . . . . . . . . 5293 1 
+        6 . 1 1  1  1 LYS HG3  H  1   1.45 0.02 . 1 . . . . . . . . 5293 1 
+        7 . 1 1  1  1 LYS HD2  H  1   1.70 0.02 . 1 . . . . . . . . 5293 1 
+        8 . 1 1  1  1 LYS HD3  H  1   1.70 0.02 . 1 . . . . . . . . 5293 1 
+        9 . 1 1  1  1 LYS HE2  H  1   3.02 0.02 . 1 . . . . . . . . 5293 1 
+       10 . 1 1  1  1 LYS HE3  H  1   3.02 0.02 . 1 . . . . . . . . 5293 1 
+       11 . 1 1  1  1 LYS C    C 13 176.17 0.10 . 1 . . . . . . . . 5293 1 
+       12 . 1 1  1  1 LYS CA   C 13  56.77 0.10 . 1 . . . . . . . . 5293 1 
+       13 . 1 1  1  1 LYS CB   C 13  33.77 0.10 . 1 . . . . . . . . 5293 1 
+       14 . 1 1  1  1 LYS N    N 15 125.39 0.05 . 1 . . . . . . . . 5293 1 
+       15 . 1 1  2  2 LYS H    H  1   8.45 0.02 . 1 . . . . . . . . 5293 1 
+       16 . 1 1  2  2 LYS HA   H  1   4.29 0.02 . 1 . . . . . . . . 5293 1 
+       17 . 1 1  2  2 LYS HB2  H  1   1.81 0.02 . 1 . . . . . . . . 5293 1 
+       18 . 1 1  2  2 LYS HB3  H  1   1.75 0.02 . 1 . . . . . . . . 5293 1 
+       19 . 1 1  2  2 LYS HG2  H  1   1.47 0.02 . 1 . . . . . . . . 5293 1 
+       20 . 1 1  2  2 LYS HG3  H  1   1.47 0.02 . 1 . . . . . . . . 5293 1 
+       21 . 1 1  2  2 LYS HE2  H  1   3.04 0.02 . 1 . . . . . . . . 5293 1 
+       22 . 1 1  2  2 LYS HE3  H  1   3.04 0.02 . 1 . . . . . . . . 5293 1 
+       23 . 1 1  2  2 LYS C    C 13 176.30 0.10 . 1 . . . . . . . . 5293 1 
+       24 . 1 1  2  2 LYS CA   C 13  56.62 0.10 . 1 . . . . . . . . 5293 1 
+       25 . 1 1  2  2 LYS CB   C 13  33.77 0.10 . 1 . . . . . . . . 5293 1 
+       26 . 1 1  2  2 LYS N    N 15 124.65 0.05 . 1 . . . . . . . . 5293 1 
+       27 . 1 1  3  3 ALA H    H  1   8.40 0.02 . 1 . . . . . . . . 5293 1 
+       28 . 1 1  3  3 ALA HA   H  1   4.36 0.02 . 1 . . . . . . . . 5293 1 
+       29 . 1 1  3  3 ALA HB1  H  1   1.37 0.02 . 1 . . . . . . . . 5293 1 
+       30 . 1 1  3  3 ALA HB2  H  1   1.37 0.02 . 1 . . . . . . . . 5293 1 
+       31 . 1 1  3  3 ALA HB3  H  1   1.37 0.02 . 1 . . . . . . . . 5293 1 
+       32 . 1 1  3  3 ALA C    C 13 177.73 0.10 . 1 . . . . . . . . 5293 1 
+       33 . 1 1  3  3 ALA CA   C 13  52.74 0.10 . 1 . . . . . . . . 5293 1 
+       34 . 1 1  3  3 ALA CB   C 13  19.44 0.10 . 1 . . . . . . . . 5293 1 
+       35 . 1 1  3  3 ALA N    N 15 126.82 0.05 . 1 . . . . . . . . 5293 1 
+       36 . 1 1  4  4 VAL H    H  1   8.20 0.02 . 1 . . . . . . . . 5293 1 
+       37 . 1 1  4  4 VAL HA   H  1   4.12 0.02 . 1 . . . . . . . . 5293 1 
+       38 . 1 1  4  4 VAL HB   H  1   2.05 0.02 . 1 . . . . . . . . 5293 1 
+       39 . 1 1  4  4 VAL HG11 H  1   0.95 0.02 . 1 . . . . . . . . 5293 1 
+       40 . 1 1  4  4 VAL HG12 H  1   0.95 0.02 . 1 . . . . . . . . 5293 1 
+       41 . 1 1  4  4 VAL HG13 H  1   0.95 0.02 . 1 . . . . . . . . 5293 1 
+       42 . 1 1  4  4 VAL HG21 H  1   0.91 0.02 . 1 . . . . . . . . 5293 1 
+       43 . 1 1  4  4 VAL HG22 H  1   0.91 0.02 . 1 . . . . . . . . 5293 1 
+       44 . 1 1  4  4 VAL HG23 H  1   0.91 0.02 . 1 . . . . . . . . 5293 1 
+       45 . 1 1  4  4 VAL C    C 13 176.43 0.10 . 1 . . . . . . . . 5293 1 
+       46 . 1 1  4  4 VAL CA   C 13  62.52 0.10 . 1 . . . . . . . . 5293 1 
+       47 . 1 1  4  4 VAL CB   C 13  33.42 0.10 . 1 . . . . . . . . 5293 1 
+       48 . 1 1  4  4 VAL N    N 15 120.93 0.05 . 1 . . . . . . . . 5293 1 
+       49 . 1 1  5  5 ILE H    H  1   8.28 0.02 . 1 . . . . . . . . 5293 1 
+       50 . 1 1  5  5 ILE HA   H  1   4.21 0.02 . 1 . . . . . . . . 5293 1 
+       51 . 1 1  5  5 ILE HB   H  1   1.85 0.02 . 1 . . . . . . . . 5293 1 
+       52 . 1 1  5  5 ILE HG12 H  1   1.47 0.02 . 1 . . . . . . . . 5293 1 
+       53 . 1 1  5  5 ILE HG13 H  1   1.19 0.02 . 1 . . . . . . . . 5293 1 
+       54 . 1 1  5  5 ILE HG21 H  1   0.90 0.02 . 1 . . . . . . . . 5293 1 
+       55 . 1 1  5  5 ILE HG22 H  1   0.90 0.02 . 1 . . . . . . . . 5293 1 
+       56 . 1 1  5  5 ILE HG23 H  1   0.90 0.02 . 1 . . . . . . . . 5293 1 
+       57 . 1 1  5  5 ILE C    C 13 176.17 0.10 . 1 . . . . . . . . 5293 1 
+       58 . 1 1  5  5 ILE CA   C 13  61.12 0.10 . 1 . . . . . . . . 5293 1 
+       59 . 1 1  5  5 ILE N    N 15 125.55 0.05 . 1 . . . . . . . . 5293 1 
+       60 . 1 1  6  6 ASN H    H  1   8.58 0.02 . 1 . . . . . . . . 5293 1 
+       61 . 1 1  6  6 ASN HA   H  1   4.72 0.02 . 1 . . . . . . . . 5293 1 
+       62 . 1 1  6  6 ASN HB2  H  1   2.86 0.02 . 1 . . . . . . . . 5293 1 
+       63 . 1 1  6  6 ASN HB3  H  1   2.81 0.02 . 1 . . . . . . . . 5293 1 
+       64 . 1 1  6  6 ASN C    C 13 176.05 0.10 . 1 . . . . . . . . 5293 1 
+       65 . 1 1  6  6 ASN CA   C 13  53.82 0.10 . 1 . . . . . . . . 5293 1 
+       66 . 1 1  6  6 ASN CB   C 13  39.36 0.10 . 1 . . . . . . . . 5293 1 
+       67 . 1 1  6  6 ASN N    N 15 123.94 0.05 . 1 . . . . . . . . 5293 1 
+       68 . 1 1  7  7 GLY H    H  1   8.44 0.02 . 1 . . . . . . . . 5293 1 
+       69 . 1 1  7  7 GLY HA2  H  1   3.96 0.02 . 1 . . . . . . . . 5293 1 
+       70 . 1 1  7  7 GLY HA3  H  1   3.96 0.02 . 1 . . . . . . . . 5293 1 
+       71 . 1 1  7  7 GLY C    C 13 174.62 0.10 . 1 . . . . . . . . 5293 1 
+       72 . 1 1  7  7 GLY CA   C 13  45.90 0.10 . 1 . . . . . . . . 5293 1 
+       73 . 1 1  7  7 GLY N    N 15 109.85 0.05 . 1 . . . . . . . . 5293 1 
+       74 . 1 1  8  8 GLU H    H  1   8.20 0.02 . 1 . . . . . . . . 5293 1 
+       75 . 1 1  8  8 GLU HA   H  1   4.36 0.02 . 1 . . . . . . . . 5293 1 
+       76 . 1 1  8  8 GLU HB2  H  1   2.12 0.02 . 1 . . . . . . . . 5293 1 
+       77 . 1 1  8  8 GLU HB3  H  1   2.01 0.02 . 1 . . . . . . . . 5293 1 
+       78 . 1 1  8  8 GLU HG2  H  1   2.46 0.02 . 1 . . . . . . . . 5293 1 
+       79 . 1 1  8  8 GLU HG3  H  1   2.46 0.02 . 1 . . . . . . . . 5293 1 
+       80 . 1 1  8  8 GLU C    C 13 176.30 0.10 . 1 . . . . . . . . 5293 1 
+       81 . 1 1  8  8 GLU CA   C 13  56.31 0.10 . 1 . . . . . . . . 5293 1 
+       82 . 1 1  8  8 GLU CB   C 13  28.88 0.10 . 1 . . . . . . . . 5293 1 
+       83 . 1 1  8  8 GLU N    N 15 119.95 0.05 . 1 . . . . . . . . 5293 1 
+       84 . 1 1  9  9 GLN H    H  1   8.43 0.02 . 1 . . . . . . . . 5293 1 
+       85 . 1 1  9  9 GLN HA   H  1   4.35 0.02 . 1 . . . . . . . . 5293 1 
+       86 . 1 1  9  9 GLN HB2  H  1   2.09 0.02 . 1 . . . . . . . . 5293 1 
+       87 . 1 1  9  9 GLN HB3  H  1   2.00 0.02 . 1 . . . . . . . . 5293 1 
+       88 . 1 1  9  9 GLN HG2  H  1   2.37 0.02 . 1 . . . . . . . . 5293 1 
+       89 . 1 1  9  9 GLN HG3  H  1   2.37 0.02 . 1 . . . . . . . . 5293 1 
+       90 . 1 1  9  9 GLN C    C 13 176.30 0.10 . 1 . . . . . . . . 5293 1 
+       91 . 1 1  9  9 GLN CA   C 13  56.31 0.10 . 1 . . . . . . . . 5293 1 
+       92 . 1 1  9  9 GLN CB   C 13  29.57 0.10 . 1 . . . . . . . . 5293 1 
+       93 . 1 1  9  9 GLN N    N 15 121.87 0.10 . 1 . . . . . . . . 5293 1 
+       94 . 1 1 10 10 ILE H    H  1   8.20 0.02 . 1 . . . . . . . . 5293 1 
+       95 . 1 1 10 10 ILE HA   H  1   4.16 0.02 . 1 . . . . . . . . 5293 1 
+       96 . 1 1 10 10 ILE HB   H  1   1.87 0.02 . 1 . . . . . . . . 5293 1 
+       97 . 1 1 10 10 ILE HG12 H  1   1.46 0.02 . 1 . . . . . . . . 5293 1 
+       98 . 1 1 10 10 ILE HG13 H  1   1.19 0.02 . 1 . . . . . . . . 5293 1 
+       99 . 1 1 10 10 ILE HG21 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      100 . 1 1 10 10 ILE HG22 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      101 . 1 1 10 10 ILE HG23 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      102 . 1 1 10 10 ILE C    C 13 174.88 0.10 . 1 . . . . . . . . 5293 1 
+      103 . 1 1 10 10 ILE CA   C 13  61.59 0.10 . 1 . . . . . . . . 5293 1 
+      104 . 1 1 10 10 ILE N    N 15 122.89 0.10 . 1 . . . . . . . . 5293 1 
+      105 . 1 1 11 11 ARG H    H  1   8.36 0.02 . 1 . . . . . . . . 5293 1 
+      106 . 1 1 11 11 ARG HA   H  1   4.43 0.02 . 1 . . . . . . . . 5293 1 
+      107 . 1 1 11 11 ARG HG2  H  1   1.65 0.02 . 1 . . . . . . . . 5293 1 
+      108 . 1 1 11 11 ARG HG3  H  1   1.65 0.02 . 1 . . . . . . . . 5293 1 
+      109 . 1 1 11 11 ARG HD2  H  1   2.90 0.02 . 1 . . . . . . . . 5293 1 
+      110 . 1 1 11 11 ARG HD3  H  1   2.90 0.02 . 1 . . . . . . . . 5293 1 
+      111 . 1 1 11 11 ARG C    C 13 176.82 0.10 . 1 . . . . . . . . 5293 1 
+      112 . 1 1 11 11 ARG CB   C 13  39.01 0.10 . 1 . . . . . . . . 5293 1 
+      113 . 1 1 11 11 ARG N    N 15 121.51 1    . 1 . . . . . . . . 5293 1 
+      114 . 1 1 12 12 SER H    H  1   8.31 0.02 . 1 . . . . . . . . 5293 1 
+      115 . 1 1 12 12 SER HA   H  1   4.43 0.02 . 1 . . . . . . . . 5293 1 
+      116 . 1 1 12 12 SER HB2  H  1   3.88 0.02 . 1 . . . . . . . . 5293 1 
+      117 . 1 1 12 12 SER HB3  H  1   3.85 0.02 . 1 . . . . . . . . 5293 1 
+      118 . 1 1 12 12 SER CA   C 13  58.95 0.10 . 1 . . . . . . . . 5293 1 
+      119 . 1 1 12 12 SER CB   C 13  64.52 0.10 . 1 . . . . . . . . 5293 1 
+      120 . 1 1 12 12 SER N    N 15 119.18 0.10 . 1 . . . . . . . . 5293 1 
+      121 . 1 1 15 15 ASP H    H  1   8.35 0.02 . 1 . . . . . . . . 5293 1 
+      122 . 1 1 15 15 ASP HA   H  1   4.70 0.02 . 1 . . . . . . . . 5293 1 
+      123 . 1 1 15 15 ASP HB2  H  1   2.88 0.02 . 1 . . . . . . . . 5293 1 
+      124 . 1 1 15 15 ASP HB3  H  1   2.83 0.02 . 1 . . . . . . . . 5293 1 
+      125 . 1 1 15 15 ASP C    C 13 175.53 0.10 . 1 . . . . . . . . 5293 1 
+      126 . 1 1 15 15 ASP CA   C 13  53.51 0.10 . 1 . . . . . . . . 5293 1 
+      127 . 1 1 15 15 ASP N    N 15 124.14 0.10 . 1 . . . . . . . . 5293 1 
+      128 . 1 1 16 16 LEU H    H  1   8.06 0.02 . 1 . . . . . . . . 5293 1 
+      129 . 1 1 16 16 LEU HA   H  1   4.26 0.02 . 1 . . . . . . . . 5293 1 
+      130 . 1 1 16 16 LEU HB2  H  1   1.55 0.02 . 1 . . . . . . . . 5293 1 
+      131 . 1 1 16 16 LEU HB3  H  1   1.55 0.02 . 1 . . . . . . . . 5293 1 
+      132 . 1 1 16 16 LEU HD11 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      133 . 1 1 16 16 LEU HD12 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      134 . 1 1 16 16 LEU HD13 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      135 . 1 1 16 16 LEU HD21 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      136 . 1 1 16 16 LEU HD22 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      137 . 1 1 16 16 LEU HD23 H  1   0.87 0.02 . 1 . . . . . . . . 5293 1 
+      138 . 1 1 16 16 LEU N    N 15 122.24 0.10 . 1 . . . . . . . . 5293 1 
+      139 . 1 1 17 17 HIS H    H  1   8.44 0.02 . 1 . . . . . . . . 5293 1 
+      140 . 1 1 17 17 HIS HA   H  1   4.68 0.02 . 1 . . . . . . . . 5293 1 
+      141 . 1 1 17 17 HIS HB2  H  1   3.30 0.02 . 1 . . . . . . . . 5293 1 
+      142 . 1 1 17 17 HIS HB3  H  1   3.21 0.02 . 1 . . . . . . . . 5293 1 
+      143 . 1 1 17 17 HIS CA   C 13  55.53 0.10 . 1 . . . . . . . . 5293 1 
+      144 . 1 1 17 17 HIS CB   C 13  38.66 0.10 . 1 . . . . . . . . 5293 1 
+      145 . 1 1 17 17 HIS N    N 15 118.73 0.10 . 1 . . . . . . . . 5293 1 
+      146 . 1 1 18 18 GLN H    H  1   8.35 0.02 . 1 . . . . . . . . 5293 1 
+      147 . 1 1 18 18 GLN HA   H  1   4.32 0.02 . 1 . . . . . . . . 5293 1 
+      148 . 1 1 18 18 GLN HB2  H  1   2.10 0.02 . 1 . . . . . . . . 5293 1 
+      149 . 1 1 18 18 GLN HB3  H  1   1.99 0.02 . 1 . . . . . . . . 5293 1 
+      150 . 1 1 18 18 GLN HG2  H  1   2.36 0.02 . 1 . . . . . . . . 5293 1 
+      151 . 1 1 18 18 GLN HG3  H  1   2.36 0.02 . 1 . . . . . . . . 5293 1 
+      152 . 1 1 18 18 GLN C    C 13 176.30 0.10 . 1 . . . . . . . . 5293 1 
+      153 . 1 1 18 18 GLN CA   C 13  56.31 0.10 . 1 . . . . . . . . 5293 1 
+      154 . 1 1 18 18 GLN CB   C 13  30.27 0.10 . 1 . . . . . . . . 5293 1 
+      155 . 1 1 18 18 GLN N    N 15 121.68 0.10 . 1 . . . . . . . . 5293 1 
+      156 . 1 1 19 19 THR H    H  1   8.34 0.02 . 1 . . . . . . . . 5293 1 
+      157 . 1 1 19 19 THR HA   H  1   4.43 0.02 . 1 . . . . . . . . 5293 1 
+      158 . 1 1 19 19 THR HB   H  1   4.20 0.02 . 1 . . . . . . . . 5293 1 
+      159 . 1 1 19 19 THR HG21 H  1   1.22 0.02 . 1 . . . . . . . . 5293 1 
+      160 . 1 1 19 19 THR HG22 H  1   1.22 0.02 . 1 . . . . . . . . 5293 1 
+      161 . 1 1 19 19 THR HG23 H  1   1.22 0.02 . 1 . . . . . . . . 5293 1 
+      162 . 1 1 19 19 THR C    C 13 174.62 0.10 . 1 . . . . . . . . 5293 1 
+      163 . 1 1 19 19 THR CA   C 13  62.37 0.10 . 1 . . . . . . . . 5293 1 
+      164 . 1 1 19 19 THR N    N 15 117.04 0.10 . 1 . . . . . . . . 5293 1 
+      165 . 1 1 20 20 LEU H    H  1   8.32 0.02 . 1 . . . . . . . . 5293 1 
+      166 . 1 1 20 20 LEU HA   H  1   4.33 0.02 . 1 . . . . . . . . 5293 1 
+      167 . 1 1 20 20 LEU HB2  H  1   1.65 0.02 . 1 . . . . . . . . 5293 1 
+      168 . 1 1 20 20 LEU HB3  H  1   1.65 0.02 . 1 . . . . . . . . 5293 1 
+      169 . 1 1 20 20 LEU HG   H  1   1.61 0.02 . 1 . . . . . . . . 5293 1 
+      170 . 1 1 20 20 LEU N    N 15 125.76 0.10 . 1 . . . . . . . . 5293 1 
+      171 . 1 1 68 68 GLU H    H  1   8.42 0.02 . 1 . . . . . . . . 5293 1 
+      172 . 1 1 68 68 GLU HA   H  1   4.41 0.02 . 1 . . . . . . . . 5293 1 
+      173 . 1 1 68 68 GLU HB2  H  1   2.10 0.02 . 1 . . . . . . . . 5293 1 
+      174 . 1 1 68 68 GLU HB3  H  1   2.00 0.02 . 1 . . . . . . . . 5293 1 
+      175 . 1 1 68 68 GLU HG2  H  1   2.36 0.02 . 1 . . . . . . . . 5293 1 
+      176 . 1 1 68 68 GLU HG3  H  1   2.36 0.02 . 1 . . . . . . . . 5293 1 
+      177 . 1 1 68 68 GLU C    C 13 176.43 0.10 . 1 . . . . . . . . 5293 1 
+      178 . 1 1 68 68 GLU CA   C 13  56.46 0.10 . 1 . . . . . . . . 5293 1 
+      179 . 1 1 68 68 GLU CB   C 13  31.32 0.10 . 1 . . . . . . . . 5293 1 
+      180 . 1 1 68 68 GLU N    N 15 125.69 0.10 . 1 . . . . . . . . 5293 1 
+      181 . 1 1 69 69 SER H    H  1   8.32 0.02 . 1 . . . . . . . . 5293 1 
+      182 . 1 1 69 69 SER HA   H  1   4.50 0.02 . 1 . . . . . . . . 5293 1 
+      183 . 1 1 69 69 SER HB2  H  1   3.89 0.02 . 1 . . . . . . . . 5293 1 
+      184 . 1 1 69 69 SER HB3  H  1   3.86 0.02 . 1 . . . . . . . . 5293 1 
+      185 . 1 1 69 69 SER C    C 13 175.01 0.10 . 1 . . . . . . . . 5293 1 
+      186 . 1 1 69 69 SER CA   C 13  58.48 0.10 . 1 . . . . . . . . 5293 1 
+      187 . 1 1 69 69 SER CB   C 13  64.17 0.10 . 1 . . . . . . . . 5293 1 
+      188 . 1 1 69 69 SER N    N 15 117.65 0.10 . 1 . . . . . . . . 5293 1 
+      189 . 1 1 70 70 VAL H    H  1   8.25 0.02 . 1 . . . . . . . . 5293 1 
+      190 . 1 1 70 70 VAL HA   H  1   4.23 0.02 . 1 . . . . . . . . 5293 1 
+      191 . 1 1 70 70 VAL HB   H  1   1.90 0.02 . 1 . . . . . . . . 5293 1 
+      192 . 1 1 70 70 VAL HG11 H  1   0.92 0.02 . 1 . . . . . . . . 5293 1 
+      193 . 1 1 70 70 VAL HG12 H  1   0.92 0.02 . 1 . . . . . . . . 5293 1 
+      194 . 1 1 70 70 VAL HG13 H  1   0.92 0.02 . 1 . . . . . . . . 5293 1 
+      195 . 1 1 70 70 VAL HG21 H  1   0.92 0.02 . 1 . . . . . . . . 5293 1 
+      196 . 1 1 70 70 VAL HG22 H  1   0.92 0.02 . 1 . . . . . . . . 5293 1 
+      197 . 1 1 70 70 VAL HG23 H  1   0.92 0.02 . 1 . . . . . . . . 5293 1 
+      198 . 1 1 70 70 VAL CA   C 13  61.74 0.10 . 1 . . . . . . . . 5293 1 
+      199 . 1 1 70 70 VAL N    N 15 122.90 0.10 . 1 . . . . . . . . 5293 1 
+
+   stop_
+
+save_
+
+
+    ########################
+    #  Coupling constants  #
+    ########################
+
+save_J_values_set_1
+   _Coupling_constant_list.Sf_category                   coupling_constants
+   _Coupling_constant_list.Sf_framecode                  J_values_set_1
+   _Coupling_constant_list.Entry_ID                      5293
+   _Coupling_constant_list.ID                            1
+   _Coupling_constant_list.Sample_condition_list_ID      1
+   _Coupling_constant_list.Sample_condition_list_label  $Cond_1
+   _Coupling_constant_list.Spectrometer_frequency_1H     600
+   _Coupling_constant_list.Details                       .
+   _Coupling_constant_list.Text_data_format              .
+   _Coupling_constant_list.Text_data                     .
+
+   loop_
+      _Coupling_constant_experiment.Experiment_ID
+      _Coupling_constant_experiment.Experiment_name
+      _Coupling_constant_experiment.Sample_ID
+      _Coupling_constant_experiment.Sample_label
+      _Coupling_constant_experiment.Sample_state
+      _Coupling_constant_experiment.Entry_ID
+      _Coupling_constant_experiment.Coupling_constant_list_ID
+
+      . . 1 $sample_1 . 5293 1 
+
+   stop_
+
+   loop_
+      _Coupling_constant.ID
+      _Coupling_constant.Code
+      _Coupling_constant.Assembly_atom_ID_1
+      _Coupling_constant.Entity_assembly_ID_1
+      _Coupling_constant.Entity_ID_1
+      _Coupling_constant.Comp_index_ID_1
+      _Coupling_constant.Seq_ID_1
+      _Coupling_constant.Comp_ID_1
+      _Coupling_constant.Atom_ID_1
+      _Coupling_constant.Atom_type_1
+      _Coupling_constant.Atom_isotope_number_1
+      _Coupling_constant.Ambiguity_code_1
+      _Coupling_constant.Assembly_atom_ID_2
+      _Coupling_constant.Entity_assembly_ID_2
+      _Coupling_constant.Entity_ID_2
+      _Coupling_constant.Comp_index_ID_2
+      _Coupling_constant.Seq_ID_2
+      _Coupling_constant.Comp_ID_2
+      _Coupling_constant.Atom_ID_2
+      _Coupling_constant.Atom_type_2
+      _Coupling_constant.Atom_isotope_number_2
+      _Coupling_constant.Ambiguity_code_2
+      _Coupling_constant.Val
+      _Coupling_constant.Val_min
+      _Coupling_constant.Val_max
+      _Coupling_constant.Val_err
+      _Coupling_constant.Resonance_ID_1
+      _Coupling_constant.Resonance_ID_2
+      _Coupling_constant.Auth_entity_assembly_ID_1
+      _Coupling_constant.Auth_seq_ID_1
+      _Coupling_constant.Auth_comp_ID_1
+      _Coupling_constant.Auth_atom_ID_1
+      _Coupling_constant.Auth_entity_assembly_ID_2
+      _Coupling_constant.Auth_seq_ID_2
+      _Coupling_constant.Auth_comp_ID_2
+      _Coupling_constant.Auth_atom_ID_2
+      _Coupling_constant.Details
+      _Coupling_constant.Entry_ID
+      _Coupling_constant.Coupling_constant_list_ID
+
+       1 3JHNHA . 1 1  1  1 LYS H . . . . 1 1  1  1 LYS HA . . . 6.5 . . . . . . . . . . . . . . 5293 1 
+       2 3JHNHA . 1 1  2  2 LYS H . . . . 1 1  2  2 LYS HA . . . 6.4 . . . . . . . . . . . . . . 5293 1 
+       3 3JHNHA . 1 1  3  3 ALA H . . . . 1 1  3  3 ALA HA . . . 5.6 . . . . . . . . . . . . . . 5293 1 
+       4 3JHNHA . 1 1  4  4 VAL H . . . . 1 1  4  4 VAL HA . . . 8.1 . . . . . . . . . . . . . . 5293 1 
+       5 3JHNHA . 1 1  5  5 ILE H . . . . 1 1  5  5 ILE HA . . . 7.9 . . . . . . . . . . . . . . 5293 1 
+       6 3JHNHA . 1 1  6  6 ASN H . . . . 1 1  6  6 ASN HA . . . 6.2 . . . . . . . . . . . . . . 5293 1 
+       7 3JHNHA . 1 1  8  8 GLU H . . . . 1 1  8  8 GLU HA . . . 6.4 . . . . . . . . . . . . . . 5293 1 
+       8 3JHNHA . 1 1  9  9 GLN H . . . . 1 1  9  9 GLN HA . . . 6.8 . . . . . . . . . . . . . . 5293 1 
+       9 3JHNHA . 1 1 10 10 ILE H . . . . 1 1 10 10 ILE HA . . . 7.0 . . . . . . . . . . . . . . 5293 1 
+      10 3JHNHA . 1 1 11 11 ARG H . . . . 1 1 11 11 ARG HA . . . 6.0 . . . . . . . . . . . . . . 5293 1 
+      11 3JHNHA . 1 1 12 12 SER H . . . . 1 1 12 12 SER HA . . . 6.0 . . . . . . . . . . . . . . 5293 1 
+      12 3JHNHA . 1 1 16 16 LEU H . . . . 1 1 16 16 LEU HA . . . 6.2 . . . . . . . . . . . . . . 5293 1 
+      13 3JHNHA . 1 1 19 19 THR H . . . . 1 1 19 19 THR HA . . . 6.7 . . . . . . . . . . . . . . 5293 1 
+      14 3JHNHA . 1 1 20 20 LEU H . . . . 1 1 20 20 LEU HA . . . 5.7 . . . . . . . . . . . . . . 5293 1 
+      15 3JHNHA . 1 1 68 68 GLU H . . . . 1 1 68 68 GLU HA . . . 8.0 . . . . . . . . . . . . . . 5293 1 
+      16 3JHNHA . 1 1 69 69 SER H . . . . 1 1 69 69 SER HA . . . 6.5 . . . . . . . . . . . . . . 5293 1 
+      17 3JHNHA . 1 1 70 70 VAL H . . . . 1 1 70 70 VAL HA . . . 6.7 . . . . . . . . . . . . . . 5293 1 
+
+   stop_
+
+save_
+

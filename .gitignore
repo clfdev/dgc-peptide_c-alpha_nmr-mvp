@@ -1,0 +1,278 @@
+# .gitignore
+
+# ============================================================================
+# Python
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+
+# ============================================================================
+# IDEs and Editors
+# ============================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+
+# ============================================================================
+# Operating System
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+
+# ============================================================================
+# Project Specific - Data Files
+# ============================================================================
+
+# Raw data (PDB and BMRB files are large and available from public databases)
+data/raw/pdb/*.pdb
+data/raw/bmrb/*.str
+
+# Processed data (can be regenerated from scripts)
+data/processed/*.csv
+
+# External datasets (optional, if Phase 1 includes benchmarks)
+data/external/
+
+
+# ============================================================================
+# Project Specific - Model Files
+# ============================================================================
+
+# Trained models (can be large, regenerate from training)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.pth
+
+# Keep metadata.json (small, useful for documentation)
+!models/metadata.json
+
+# Keep directory structure
+!models/.gitkeep
+
+
+# ============================================================================
+# Project Specific - Results
+# ============================================================================
+
+# All results (regenerated on each run)
+results/*.csv
+results/*.txt
+results/*.png
+results/*.pdf
+
+# Keep directory structure
+!results/.gitkeep
+
+
+# ============================================================================
+# Project Specific - Logs
+# ============================================================================
+
+# Log files
+logs/
+*.log
+
+
+# ============================================================================
+# Project Specific - Temporary Files
+# ============================================================================
+
+# Scratch/temporary files
+scratch/
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+*~
+
+
+# ============================================================================
+# Project Specific - Documentation Build
+# ============================================================================
+
+# Sphinx documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+
+# ============================================================================
+# Project Specific - Notebooks (Optional)
+# ============================================================================
+
+# Uncomment if you want to ignore all notebooks (keep only in local development)
+# notebooks/*.ipynb
+
+# Ignore notebook checkpoints
+notebooks/.ipynb_checkpoints/
+
+
+# ============================================================================
+# Keep Directory Structure (Placeholder Files)
+# ============================================================================
+
+# These files ensure empty directories are tracked by git
+!.gitkeep
+!**/.gitkeep
+
+
+# ============================================================================
+# Exceptions - Files to Keep
+# ============================================================================
+
+# Keep pilot list configuration
+!data/pilot_list.yaml
+
+# Keep example/test files (if small)
+!data/raw/pdb/.gitkeep
+!data/raw/bmrb/.gitkeep
+!data/processed/.gitkeep
+
+# Keep requirements
+!requirements.txt
+!setup.py
+
+# Keep documentation
+!README.md
+!docs/*.md
+!LICENSE
