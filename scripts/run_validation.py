@@ -33,11 +33,16 @@ def main():
     
     # Lista piloto
     pilot_entries = [
-        ('1VII', '5713'),  # Villin headpiece
-        ('1LE1', '5387'),  # Trpzip-2
-        ('1E0L', '4737'),  # WW domain
-        ('1UBQ', '6457'),  # Ubiquitin
-        ('2MAG', '6031'),  # Magainin-2
+        ('4CZ3', '19911'),  
+        ('1LE1', '34305'),  
+        ('4CZ4', '19929'),  
+        ('5W9F', '30312'),  
+        ('1AQ5', '4055'), 
+        ('6R9Z', '34391'),  
+        ('2LHY', '17871'),  
+        ('2JVD', '15476'),  
+        ('1S6W', '6085'), 
+        ('6DST', '30481'),
     ]
     
     # Criar diretório de resultados se não existir

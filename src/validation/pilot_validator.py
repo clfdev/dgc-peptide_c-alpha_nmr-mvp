@@ -85,8 +85,8 @@ class PilotValidator:
         self,
         pdb_id: str,
         bmrb_id: str,
-        min_length: int = 10,
-        max_length: int = 50,
+        min_length: int = 9,
+        max_length: int = 60,
         max_resolution: float = 2.5,
         min_ca_coverage: float = 0.70,
     ) -> PilotEntryReport:

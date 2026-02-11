@@ -3,27 +3,20 @@
 """
 Treina modelo Ridge Regression para predição de chemical shifts CA.
 
-Versão 2: Features Expandidas (27 features)
-- 12 geométricas: d1-d5, R_g, mean_dist, dist_to_center, local_density, 
-                  dist_to_n_term, dist_to_c_term, max_dist
-- 15 físico-químicas: hydrophobicity, volume, charge, polarity, aromaticity,
-                      flexibility, accessibility, helix/sheet/turn propensity,
-                      is_gly, is_pro, is_charged, is_aromatic, is_aliphatic
-
 Estratégia:
 - GroupKFold por pdb_id (leave-one-structure-out)
 - Normalização de features (StandardScaler)
 - Ridge com CV interna para escolha de lambda
 - Métricas: MAE, RMSE, R² (global e por estrutura)
 
-Input: data/processed/pilot_dataset_features_v2.csv
+Input: data/processed/pilot_dataset_features.csv
 Output:
-  - results/predictions_v2.csv
-  - results/model_performance_v2.csv
-  - results/summary_v2.txt
-  - models/ridge_model_v2.pkl
-  - models/scaler_v2.pkl
-  - models/metadata_v2.json
+  - results/predictions.csv
+  - results/model_performance.csv
+  - results/summary.txt
+  - models/ridge_model.pkl
+  - models/scaler.pkl
+  - models/metadata.json
 """
 
 import sys
@@ -43,16 +36,15 @@ def train_and_evaluate():
     """Treina modelo Ridge com GroupKFold e avalia resultados."""
 
     print(f"\n{'='*70}")
-    print("TREINAMENTO DO MODELO RIDGE - MVP FASE 0 V2")
-    print("27 FEATURES EXPANDIDAS (12 geométricas + 15 físico-químicas)")
+    print("TREINAMENTO DO MODELO RIDGE - MVP FASE 0")
     print(f"{'='*70}\n")
 
     # Carregar dataset
-    input_path = Path("data/processed/pilot_dataset_features_v2.csv")
+    input_path = Path("data/processed/pilot_dataset_features.csv")
 
     if not input_path.exists():
         print(f"Erro: {input_path} não encontrado!")
-        print("Execute calculate_features_v2.py primeiro.")
+        print("Execute calculate_features.py primeiro.")
         sys.exit(1)
 
     df = pd.read_csv(input_path)
@@ -60,35 +52,11 @@ def train_and_evaluate():
 
     # Definir features e target
     feature_cols = [
-        # Geométricas (12)
-        "d1", 
-        "d2", 
-        "d3", 
-        "d4", 
-        "d5",
-        "R_g", 
-        "mean_dist", 
         "dist_to_center",
-        "local_density", 
-        "dist_to_n_term", 
-        "dist_to_c_term", 
-        "max_dist",
-        # Físico-químicas (15)
-        "hydrophobicity", 
-        "volume", 
-        "charge", 
-        "polarity", 
-        "aromaticity",
-        "flexibility", 
-        "accessibility", 
-        "helix_propensity", 
-        "sheet_propensity", 
-        "turn_propensity",
-        "is_gly", 
-        "is_pro", 
-        "is_charged", 
-        "is_aromatic", 
-        "is_aliphatic"
+        "dist_to_nearest_neighbor",
+        "local_density",
+        "dist_to_n_term",
+        "dist_to_c_term",
     ]
     target_col = "shift_ca_experimental"
 
@@ -98,13 +66,8 @@ def train_and_evaluate():
     groups = df["pdb_id"].values
 
     print(f"\nFeatures utilizadas ({len(feature_cols)}):")
-    print("\nGEOMÉTRICAS (12):")
-    for i, col in enumerate(feature_cols[:12], start=1):
-        print(f"  {i:2d}. {col}")
-    
-    print("\nFÍSICO-QUÍMICAS (15):")
-    for i, col in enumerate(feature_cols[12:], start=13):
-        print(f"  {i:2d}. {col}")
+    for i, col in enumerate(feature_cols, start=1):
+        print(f"  {i}. {col}")
 
     print(f"\nTarget: {target_col}")
     print(f"  Range: {y.min():.2f} - {y.max():.2f} ppm")
@@ -122,8 +85,8 @@ def train_and_evaluate():
     print(f"\nValidação Cruzada: GroupKFold com {n_splits} splits")
     print("Estratégia: Leave-one-structure-out\n")
 
-    # Alphas para RidgeCV (expandido para regularização mais forte)
-    alphas = [0.001, 0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]
+    # Alphas para RidgeCV
+    alphas = [0.01, 0.1, 1.0, 10.0, 100.0]
 
     # Armazenar resultados
     all_predictions = []
@@ -204,26 +167,13 @@ def train_and_evaluate():
     print(f"  RMSE: {rmse_global:.3f} ppm")
     print(f"  R²:   {r2_global:.3f}")
 
-    print("\nCritério de Sucesso MVP (Atualizado para V2):")
-    print(f"  MAE < 2.5 ppm:  {'PASS ✓' if mae_global < 2.5 else 'FAIL ✗'}")
-    print(f"  RMSE < 3.5 ppm: {'PASS ✓' if rmse_global < 3.5 else 'FAIL ✗'}")
-    print(f"  R² > 0.40:      {'PASS ✓' if r2_global > 0.40 else 'FAIL ✗'}")
+    print("\nCritério de Sucesso MVP:")
+    print(f"  MAE < 3.5 ppm:  {'PASS' if mae_global < 3.5 else 'FAIL'}")
+    print(f"  RMSE < 4.5 ppm: {'PASS' if rmse_global < 4.5 else 'FAIL'}")
+    print(f"  R² > 0.75:      {'PASS' if r2_global > 0.75 else 'FAIL'}")
 
-    overall_success = (mae_global < 2.5) and (rmse_global < 3.5) and (r2_global > 0.40)
-    print(f"\nResultado MVP V2: {'SUCESSO ✓✓✓' if overall_success else 'REVISAR'}")
-
-    # Comparação com baseline (5 features)
-    print(f"\n{'='*70}")
-    print("COMPARAÇÃO COM BASELINE (5 features)")
-    print(f"{'='*70}")
-    print("Baseline (5 features geométricas):")
-    print("  MAE:  3.176 ppm")
-    print("  RMSE: 4.405 ppm")
-    print("  R²:   -0.024")
-    print(f"\nV2 (27 features expandidas):")
-    print(f"  MAE:  {mae_global:.3f} ppm  (melhoria: {((3.176 - mae_global) / 3.176 * 100):.1f}%)")
-    print(f"  RMSE: {rmse_global:.3f} ppm  (melhoria: {((4.405 - rmse_global) / 4.405 * 100):.1f}%)")
-    print(f"  R²:   {r2_global:.3f}  (melhoria: {(r2_global - (-0.024)):.3f} pontos)")
+    overall_success = (mae_global < 3.5) and (rmse_global < 4.5) and (r2_global > 0.75)
+    print(f"\nResultado MVP: {'SUCESSO' if overall_success else 'REVISAR'}")
 
     # Métricas por estrutura
     print(f"\n{'='*70}")
@@ -265,33 +215,10 @@ def train_and_evaluate():
     ]
 
     if len(outliers) > 0:
-        outlier_percentage = len(outliers) / len(predictions_df) * 100
-        print(f"\n  {len(outliers)} outliers ({outlier_percentage:.1f}%):\n")
+        print(f"\n  {len(outliers)} outliers ({len(outliers)/len(predictions_df)*100:.1f}%):\n")
         print(outliers[outlier_cols].to_string(index=False))
-        
-        # Análise de outliers por tipo de resíduo
-        print(f"\n  Outliers por tipo de resíduo:")
-        outlier_residue_counts = outliers['residue_type'].value_counts()
-        for res, count in outlier_residue_counts.items():
-            print(f"    {res}: {count}")
     else:
         print("\n  Nenhum outlier detectado.")
-
-    # Análise específica de GLY e PRO (problemas conhecidos)
-    print(f"\n{'='*70}")
-    print("ANÁLISE DE RESÍDUOS PROBLEMÁTICOS (GLY e PRO)")
-    print(f"{'='*70}")
-    
-    for res_type in ['G', 'P']:
-        res_df = predictions_df[predictions_df['residue_type'] == res_type]
-        if len(res_df) > 0:
-            mae_res = res_df['abs_error'].mean()
-            mean_error = res_df['error'].mean()
-            print(f"\n  {res_type} ({len(res_df)} amostras):")
-            print(f"    MAE: {mae_res:.3f} ppm")
-            print(f"    Erro médio (bias): {mean_error:.3f} ppm")
-            print(f"    Range experimental: {res_df['shift_ca_experimental'].min():.1f} - {res_df['shift_ca_experimental'].max():.1f} ppm")
-            print(f"    Range predito: {res_df['shift_predicted'].min():.1f} - {res_df['shift_predicted'].max():.1f} ppm")
 
     # ===========================
     # Salvar resultados (results/)
@@ -303,7 +230,7 @@ def train_and_evaluate():
     results_dir = Path("results")
     results_dir.mkdir(exist_ok=True)
 
-    predictions_path = results_dir / "predictions_v2.csv"
+    predictions_path = results_dir / "predictions.csv"
     save_cols = [
         "pdb_id",
         "bmrb_id",
@@ -319,19 +246,18 @@ def train_and_evaluate():
     print(f"  Predições salvas: {predictions_path}")
 
     fold_metrics_df = pd.DataFrame(fold_metrics)
-    fold_path = results_dir / "model_performance_v2.csv"
+    fold_path = results_dir / "model_performance.csv"
     fold_metrics_df.to_csv(fold_path, index=False)
     print(f"  Métricas por fold: {fold_path}")
 
-    summary_path = results_dir / "summary_v2.txt"
+    summary_path = results_dir / "summary.txt"
     with open(summary_path, "w", encoding="utf-8") as f:
         f.write("=" * 70 + "\n")
-        f.write("SUMÁRIO DO TREINAMENTO - MVP FASE 0 V2\n")
-        f.write("27 FEATURES EXPANDIDAS\n")
+        f.write("SUMÁRIO DO TREINAMENTO - MVP FASE 0\n")
         f.write("=" * 70 + "\n\n")
 
         f.write(f"Dataset: {len(predictions_df)} amostras, {df['pdb_id'].nunique()} estruturas\n")
-        f.write(f"Features: {len(feature_cols)} (12 geométricas + 15 físico-químicas)\n")
+        f.write(f"Features: {len(feature_cols)}\n")
         f.write(f"Validação: GroupKFold ({n_splits} folds)\n\n")
 
         f.write("MÉTRICAS GLOBAIS:\n")
@@ -339,17 +265,12 @@ def train_and_evaluate():
         f.write(f"  RMSE: {rmse_global:.3f} ppm\n")
         f.write(f"  R²:   {r2_global:.3f}\n\n")
 
-        f.write("CRITÉRIO MVP V2:\n")
-        f.write(f"  MAE < 2.5 ppm:  {'PASS' if mae_global < 2.5 else 'FAIL'}\n")
-        f.write(f"  RMSE < 3.5 ppm: {'PASS' if rmse_global < 3.5 else 'FAIL'}\n")
-        f.write(f"  R² > 0.40:      {'PASS' if r2_global > 0.40 else 'FAIL'}\n\n")
+        f.write("CRITÉRIO MVP:\n")
+        f.write(f"  MAE < 3.5 ppm:  {'PASS' if mae_global < 3.5 else 'FAIL'}\n")
+        f.write(f"  RMSE < 4.5 ppm: {'PASS' if rmse_global < 4.5 else 'FAIL'}\n")
+        f.write(f"  R² > 0.75:      {'PASS' if r2_global > 0.75 else 'FAIL'}\n\n")
 
         f.write(f"Resultado: {'SUCESSO' if overall_success else 'REVISAR'}\n\n")
-
-        f.write("COMPARAÇÃO COM BASELINE (5 features):\n")
-        f.write(f"  Melhoria MAE:  {((3.176 - mae_global) / 3.176 * 100):.1f}%\n")
-        f.write(f"  Melhoria RMSE: {((4.405 - rmse_global) / 4.405 * 100):.1f}%\n")
-        f.write(f"  Melhoria R²:   {(r2_global - (-0.024)):.3f} pontos\n\n")
 
         f.write("=" * 70 + "\n")
         f.write("MÉTRICAS POR ESTRUTURA\n")
@@ -363,7 +284,7 @@ def train_and_evaluate():
 
         if len(outliers) > 0:
             f.write("=" * 70 + "\n")
-            f.write(f"OUTLIERS (|erro| > 5 ppm): {len(outliers)} ({outlier_percentage:.1f}%)\n")
+            f.write(f"OUTLIERS (|erro| > 5 ppm): {len(outliers)}\n")
             f.write("=" * 70 + "\n\n")
             f.write(outliers[outlier_cols].to_string(index=False))
 
@@ -383,17 +304,6 @@ def train_and_evaluate():
     ridge_final.fit(X_scaled_final, y)
 
     print(f"Lambda escolhido (full fit): {float(ridge_final.alpha_)}")
-    
-    # Mostrar feature importance (coeficientes)
-    print(f"\nTop 10 Features Mais Importantes (maior |coef|):")
-    coefficients = ridge_final.coef_
-    feature_importance = pd.DataFrame({
-        'feature': feature_cols,
-        'coefficient': coefficients,
-        'abs_coefficient': np.abs(coefficients)
-    }).sort_values('abs_coefficient', ascending=False)
-    
-    print(feature_importance.head(10).to_string(index=False))
 
     models_dir = Path("models")
     models_dir.mkdir(exist_ok=True)
@@ -401,20 +311,16 @@ def train_and_evaluate():
     # joblib
     from joblib import dump
 
-    dump(ridge_final, models_dir / "ridge_model_v2.pkl")
-    dump(scaler_final, models_dir / "scaler_v2.pkl")
+    dump(ridge_final, models_dir / "ridge_model.pkl")
+    dump(scaler_final, models_dir / "scaler.pkl")
 
-    print(f"\nModelo salvo: {models_dir / 'ridge_model_v2.pkl'}")
-    print(f"Scaler salvo: {models_dir / 'scaler_v2.pkl'}")
+    print(f"Modelo salvo: {models_dir / 'ridge_model.pkl'}")
+    print(f"Scaler salvo: {models_dir / 'scaler.pkl'}")
 
     metadata = {
-        "model_type": "RidgeCV(full-fit) - 27 features",
+        "model_type": "RidgeCV(full-fit)",
         "n_features": int(len(feature_cols)),
         "feature_names": feature_cols,
-        "feature_categories": {
-            "geometric": feature_cols[:12],
-            "physicochemical": feature_cols[12:]
-        },
         "n_train_samples": int(len(X)),
         "n_structures": int(df["pdb_id"].nunique()),
         "mae_cv": float(mae_global),
@@ -422,19 +328,11 @@ def train_and_evaluate():
         "r2_cv": float(r2_global),
         "lambda_fullfit": float(ridge_final.alpha_),
         "trained_date": datetime.now().strftime("%Y-%m-%d"),
-        "version": "2.0-mvp-phase0-expanded",
+        "version": "1.0-mvp-phase0",
         "input_csv": str(input_path).replace("\\", "/"),
-        "baseline_comparison": {
-            "baseline_mae": 3.176,
-            "baseline_rmse": 4.405,
-            "baseline_r2": -0.024,
-            "improvement_mae_percent": float((3.176 - mae_global) / 3.176 * 100),
-            "improvement_rmse_percent": float((4.405 - rmse_global) / 4.405 * 100),
-            "improvement_r2_points": float(r2_global - (-0.024))
-        }
     }
 
-    metadata_path = models_dir / "metadata_v2.json"
+    metadata_path = models_dir / "metadata.json"
     with open(metadata_path, "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=2, ensure_ascii=False)
 
@@ -449,21 +347,17 @@ if __name__ == "__main__":
     train_and_evaluate()
 
 """
-VERSÃO 2.0 - FEATURES EXPANDIDAS
+Por Que Treinar em TODO o Dataset no Final?
+Durante CV:
 
-Principais Mudanças:
-1. Input: pilot_dataset_features_v2.csv (27 features)
-2. Features geométricas: 5 → 12 (adicionou d1-d5, R_g, mean_dist, max_dist)
-3. Features físico-químicas: 0 → 15 (novo!)
-4. Critério de sucesso ajustado: MAE < 2.5 ppm, R² > 0.40
-5. Comparação automática com baseline (5 features)
-6. Análise específica de GLY e PRO
-7. Feature importance no modelo final
-8. Outputs versionados (_v2)
+Cada fold treina em ~70 amostras
+Apenas para avaliação, não para deployment
 
-Performance Esperada:
-- MAE: 2.0-2.4 ppm (vs. 3.18 baseline)
-- RMSE: 2.8-3.3 ppm (vs. 4.41 baseline)
-- R²: 0.45-0.60 (vs. -0.024 baseline)
-- Outliers: <10% (vs. 19.3% baseline)
+Modelo final:
+
+Treina em TODAS as 95 amostras
+Maximiza informação disponível
+Este é o modelo que você vai distribuir/publicar
+
+Importante: Métricas do CV (MAE=2.4 ppm) estimam o desempenho esperado do modelo final em dados novos.
 """
