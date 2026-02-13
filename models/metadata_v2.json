@@ -63,21 +63,21 @@
       "is_aliphatic"
     ]
   },
-  "n_train_samples": 249,
-  "n_structures": 10,
-  "mae_cv": 2.468562742903933,
-  "rmse_cv": 3.1797152997328704,
-  "r2_cv": 0.4665483783985723,
+  "n_train_samples": 585,
+  "n_structures": 21,
+  "mae_cv": 2.6459318108576872,
+  "rmse_cv": 3.6048292206013204,
+  "r2_cv": 0.3945465099194334,
   "lambda_fullfit": 10.0,
-  "trained_date": "2026-02-11",
+  "trained_date": "2026-02-13",
   "version": "2.0-mvp-phase0-expanded",
   "input_csv": "data/processed/pilot_dataset_features_v2.csv",
   "baseline_comparison": {
     "baseline_mae": 3.176,
     "baseline_rmse": 4.405,
     "baseline_r2": -0.024,
-    "improvement_mae_percent": 22.274472830480704,
-    "improvement_rmse_percent": 27.81577072116072,
-    "improvement_r2_points": 0.49054837839857235
+    "improvement_mae_percent": 16.689804444027484,
+    "improvement_rmse_percent": 18.165057421082402,
+    "improvement_r2_points": 0.41854650991943343
   }
 }

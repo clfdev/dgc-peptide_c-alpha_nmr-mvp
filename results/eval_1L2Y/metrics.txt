@@ -1,11 +1,11 @@
-pred_csv: tests\1L2Y_shifts_predicted.csv
+pred_csv: tests\1L2Y_shifts_predicted_v2.csv
 bmrb_str: tests\1L2Y_bmr5293.str
 merged rows (CA-13C): 15
 
-MAE  : 3.3326666666666673
-RMSE : 4.477257344997419
-MSE  : 20.045833333333334
-MRE% : 5.978168220775347
+MAE  : 4.024666666666666
+RMSE : 5.531184924287621
+MSE  : 30.59400666666666
+MRE% : 7.341068382038753
 
 BMRB debug (tops):
 {

@@ -86,6 +86,83 @@ PILOT_STRUCTURES = [
         'description': 'Peptide structure',
         'expected_length': None,
         'notes': 'Approved - New addition'
+    },
+    {
+        'pdb_id': '1BHI',
+        'bmrb_id': '4216',
+        'description': 'Peptide structure',
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '1CR8',
+        'bmrb_id': '4475',
+        'description': 'Peptide structure', 
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '2AP7',
+        'bmrb_id': '6774',
+        'description': 'Peptide structure',
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '2B88',
+        'bmrb_id': '6804',
+        'description': 'Peptide structure',
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '4BD3',
+        'bmrb_id': '18764',
+        'description': 'Peptide structure', 
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '3ZKT',
+        'bmrb_id': '18972',
+        'description': 'Peptide structure',
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '5FZW',
+        'bmrb_id': '26003',
+        'description': 'Peptide structure', 
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '5IJ4',
+        'bmrb_id': '30030',
+        'description': 'Peptide structure',
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '5LO4',
+        'bmrb_id': '34033',
+        'description': 'Peptide structure',
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '6BVX',
+        'bmrb_id': '30382',
+        'description': 'Peptide structure',
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
+    },
+    {
+        'pdb_id': '6F3Y',
+        'bmrb_id': '34209',
+        'description': 'Peptide structure',
+        'expected_length': None,
+        'notes': 'Approved - New addition2'
     }
 ]
 
