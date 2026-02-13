@@ -10,6 +10,10 @@ from collections import defaultdict
 
 import pandas as pd
 
+'''
+Exemplo de uso:
+python scripts/evaluate_predictions.py --pred_csv tests/1L2Y_shifts_predicted_v2.csv --bmrb_str tests/1L2Y_bmr5293.str --out_dir results/eval_1L2Y
+'''
 
 def parse_bmrb_ca13c_shifts(
     bmrb_str_path: str,

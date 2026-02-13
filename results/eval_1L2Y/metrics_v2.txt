@@ -1,0 +1,46 @@
+pred_csv: tests\1L2Y_shifts_predicted_v2.csv
+bmrb_str: tests\1L2Y_bmr5293.str
+merged rows (CA-13C): 15
+
+MAE  : 3.9513333333333334
+RMSE : 5.673078529334845
+MSE  : 32.183820000000004
+MRE% : 7.217804209530115
+
+BMRB debug (tops):
+{
+  "found_target_loop": true,
+  "unique_seq_ids": 18,
+  "seen_atom_id_top": {
+    "H": 21,
+    "N": 21,
+    "HA": 20,
+    "CA": 18,
+    "C": 16,
+    "HB2": 14,
+    "HB3": 14,
+    "CB": 13,
+    "HG2": 7,
+    "HG3": 7,
+    "HB": 5,
+    "HG21": 5,
+    "HG22": 5,
+    "HG23": 5,
+    "HG12": 4,
+    "HG13": 4,
+    "HD2": 2,
+    "HD3": 2,
+    "HE2": 2,
+    "HE3": 2
+  },
+  "seen_atom_type_top": {
+    "H": 131,
+    "C": 47,
+    "N": 21
+  },
+  "seen_iso_top": {
+    "1": 131,
+    "13": 47,
+    "15": 21
+  }
+}
