@@ -1,0 +1,48 @@
+{
+  "pred_csv": "tests\\1H3H_shifts_predicted_v2.csv",
+  "bmrb_str": "tests\\1H3H_bmr5388.str",
+  "merged_rows": 60,
+  "metrics": {
+    "n": 60,
+    "MAE": 1.9229999999999994,
+    "RMSE": 2.361932118697176,
+    "MSE": 5.578723333333332,
+    "MRE_percent": 3.4521791980308407
+  },
+  "bmrb_debug": {
+    "found_target_loop": true,
+    "unique_seq_ids": 74,
+    "seen_atom_id_top": {
+      "CA": 84,
+      "HA": 79,
+      "CB": 79,
+      "C": 79,
+      "N": 78,
+      "H": 78,
+      "HB3": 69,
+      "HB2": 69,
+      "CG": 36,
+      "HG3": 26,
+      "HG2": 26,
+      "HD2": 22,
+      "CD": 18,
+      "HD3": 16,
+      "CD1": 16,
+      "CD2": 13,
+      "HD21": 11,
+      "HD22": 11,
+      "HE1": 11,
+      "HB1": 10
+    },
+    "seen_atom_type_top": {
+      "H": 578,
+      "C": 355,
+      "N": 87
+    },
+    "seen_iso_top": {
+      "1": 578,
+      "13": 355,
+      "15": 87
+    }
+  }
+}

@@ -1,0 +1,46 @@
+pred_csv: tests\2CEF_shifts_predicted_v2.csv
+bmrb_str: tests\2CEF_bmr6993.str
+merged rows (CA-13C): 15
+
+MAE  : 2.0740000000000003
+RMSE : 2.213487444433934
+MSE  : 4.899526666666668
+MRE% : 3.780246397938146
+
+BMRB debug (tops):
+{
+  "found_target_loop": true,
+  "unique_seq_ids": 15,
+  "seen_atom_id_top": {
+    "H": 16,
+    "HA": 16,
+    "CA": 15,
+    "HB2": 14,
+    "N": 14,
+    "HB3": 13,
+    "CB": 11,
+    "HG2": 6,
+    "HG3": 6,
+    "CG": 5,
+    "HD2": 3,
+    "HD3": 3,
+    "HD21": 3,
+    "HD22": 3,
+    "HA2": 2,
+    "HA3": 2,
+    "HB": 2,
+    "HG11": 2,
+    "HG12": 2,
+    "HG13": 2
+  },
+  "seen_atom_type_top": {
+    "H": 117,
+    "C": 33,
+    "N": 18
+  },
+  "seen_iso_top": {
+    "1": 117,
+    "13": 33,
+    "15": 18
+  }
+}

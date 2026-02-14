@@ -1,0 +1,46 @@
+pred_csv: tests\5U9V_shifts_predicted_v2.csv
+bmrb_str: tests\5U9V_bmr30214.str
+merged rows (CA-13C): 22
+
+MAE  : 2.265909090909091
+RMSE : 3.0052895942744926
+MSE  : 9.031765545454546
+MRE% : 3.811110345348841
+
+BMRB debug (tops):
+{
+  "found_target_loop": true,
+  "unique_seq_ids": 22,
+  "seen_atom_id_top": {
+    "CA": 22,
+    "H": 21,
+    "N": 21,
+    "HA": 19,
+    "CB": 19,
+    "HB2": 14,
+    "HB3": 11,
+    "HB": 5,
+    "HG12": 5,
+    "HG13": 5,
+    "HG21": 5,
+    "HG22": 5,
+    "HG23": 5,
+    "CG1": 5,
+    "CG2": 5,
+    "CG": 5,
+    "HD11": 4,
+    "HD12": 4,
+    "HD13": 4,
+    "CD1": 4
+  },
+  "seen_atom_type_top": {
+    "H": 143,
+    "C": 68,
+    "N": 21
+  },
+  "seen_iso_top": {
+    "1": 143,
+    "13": 68,
+    "15": 21
+  }
+}
