@@ -6,6 +6,8 @@ Gera:
 - Figure 4: Residual Analysis by Structure
 
 Obs: This order was actually inverted in the manuscript
+Figure 2: Residual Analysis by Structure
+Figure 4: Learning Curves
 """
 
 import pandas as pd
